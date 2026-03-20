@@ -75,7 +75,7 @@ export default function Home() {
           <div className="flex justify-center lg:justify-end">
             <div className="relative aspect-[4/3] w-full overflow-hidden rounded-[2rem] border border-black/10 shadow-sm lg:max-w-2xl xl:max-w-[52rem]">
               <Image
-                src="/images/Tun Fuad2.png"
+                src="/images/Hero/Tun Fuad2.png"
                 alt="Perdana Jurutera Perunding engineering project"
                 fill
                 className="object-cover object-center"
