@@ -4,14 +4,14 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-white text-zinc-900">
       <header className="sticky top-0 z-50 border-b border-zinc-200 bg-white/90 backdrop-blur">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5">
+        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-6">
           <a href="#" className="flex items-center">
             <Image
-              src="/images/Logo/PJP Logo 2.png"
+              src="/images/Logo/PJPLogoOri3.png"
               alt="Perdana Jurutera Perunding logo"
               width={300}
               height={120}
-              className="h-20 w-auto object-contain md:h-24"
+              className="h-20 w-auto scale-280 md:h-24 md:scale-280"
               priority
             />
           </a>
@@ -36,7 +36,7 @@ export default function Home() {
       <section className="flex min-h-[78vh] items-center">
         <div className="mx-auto grid w-full max-w-7xl gap-10 px-6 py-12 md:py-16 lg:grid-cols-[0.95fr_1.05fr] lg:items-center lg:gap-14">
           <div>
-            <p className="mb-4 text-sm uppercase tracking-[0.2em] text-green-700">
+            <p className="mb-4 text-sm uppercase tracking-[0.2em] text-red-600">
               Established 1994 · Sabah, Malaysia
             </p>
 
@@ -93,7 +93,7 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-6">
           <div className="grid gap-10 md:grid-cols-2">
             <div>
-              <p className="mb-3 text-sm uppercase tracking-[0.2em] text-green-700">
+              <p className="mb-3 text-sm uppercase tracking-[0.2em] text-red-600">
                 About
               </p>
               <h2 className="text-3xl font-semibold tracking-tight md:text-5xl">
@@ -114,7 +114,7 @@ export default function Home() {
           </div>
 
           <div className="mt-16 border-t border-zinc-200 pt-12">
-            <p className="mb-3 text-sm uppercase tracking-[0.2em] text-green-700">
+            <p className="mb-3 text-sm uppercase tracking-[0.2em] text-red-600">
               Our History
             </p>
 
@@ -128,7 +128,7 @@ export default function Home() {
               <div className="space-y-8">
                 <div className="relative pl-8">
                   <div className="absolute left-0 top-2 h-full w-px bg-zinc-300" />
-                  <div className="absolute left-[-5px] top-2 h-3 w-3 rounded-full bg-green-700" />
+                  <div className="absolute left-[-5px] top-2 h-3 w-3 rounded-full bg-red-600" />
                   <p className="text-sm font-medium uppercase tracking-[0.18em] text-zinc-500">
                     1994
                   </p>
@@ -142,7 +142,7 @@ export default function Home() {
 
                 <div className="relative pl-8">
                   <div className="absolute left-0 top-2 h-full w-px bg-zinc-300" />
-                  <div className="absolute left-[-5px] top-2 h-3 w-3 rounded-full bg-green-700" />
+                  <div className="absolute left-[-5px] top-2 h-3 w-3 rounded-full bg-red-600" />
                   <p className="text-sm font-medium uppercase tracking-[0.18em] text-zinc-500">
                     2000s
                   </p>
@@ -156,7 +156,7 @@ export default function Home() {
 
                 <div className="relative pl-8">
                   <div className="absolute left-0 top-2 h-full w-px bg-zinc-300" />
-                  <div className="absolute left-[-5px] top-2 h-3 w-3 rounded-full bg-green-700" />
+                  <div className="absolute left-[-5px] top-2 h-3 w-3 rounded-full bg-red-600" />
                   <p className="text-sm font-medium uppercase tracking-[0.18em] text-zinc-500">
                     2010s
                   </p>
@@ -170,7 +170,7 @@ export default function Home() {
 
                 <div className="relative pl-8">
                   <div className="absolute left-0 top-2 h-8 w-px bg-zinc-300" />
-                  <div className="absolute left-[-5px] top-2 h-3 w-3 rounded-full bg-green-700" />
+                  <div className="absolute left-[-5px] top-2 h-3 w-3 rounded-full bg-red-600" />
                   <p className="text-sm font-medium uppercase tracking-[0.18em] text-zinc-500">
                     2020s
                   </p>
@@ -189,7 +189,7 @@ export default function Home() {
 
       <section id="services" className="py-20 md:py-28">
         <div className="mx-auto max-w-7xl px-6">
-          <p className="mb-3 text-sm uppercase tracking-[0.2em] text-green-700">
+          <p className="mb-3 text-sm uppercase tracking-[0.2em] text-red-600">
             Services
           </p>
           <h2 className="max-w-3xl text-3xl font-semibold tracking-tight md:text-5xl">
@@ -244,7 +244,7 @@ export default function Home() {
 
       <section id="projects" className="bg-zinc-50 py-20 md:py-28">
         <div className="mx-auto max-w-7xl px-6">
-          <p className="mb-3 text-sm uppercase tracking-[0.2em] text-green-700">
+          <p className="mb-3 text-sm uppercase tracking-[0.2em] text-red-600">
             Projects
           </p>
           <h2 className="max-w-3xl text-3xl font-semibold tracking-tight md:text-5xl">
@@ -253,7 +253,7 @@ export default function Home() {
 
           <div className="mt-14 grid gap-6">
             <a
-              href="#contact"
+              href="/projects/digital-smart-infrastructure"
               className="group grid overflow-hidden rounded-[2rem] bg-white transition hover:-translate-y-1 hover:shadow-md md:grid-cols-2"
             >
               <div className="h-72 overflow-hidden bg-zinc-200 md:h-full">
@@ -277,7 +277,7 @@ export default function Home() {
                   and network management across Sabah.
                 </p>
 
-                <p className="mt-6 text-sm font-medium text-green-700">
+                <p className="mt-6 text-sm font-medium text-red-600">
                   Explore digital capability
                 </p>
               </div>
@@ -365,7 +365,7 @@ export default function Home() {
 
       <section id="contact" className="py-20 md:py-28">
         <div className="mx-auto max-w-4xl px-6 text-center">
-          <p className="mb-3 text-sm uppercase tracking-[0.2em] text-green-700">
+          <p className="mb-3 text-sm uppercase tracking-[0.2em] text-red-600">
             Contact
           </p>
           <h2 className="text-3xl font-semibold tracking-tight md:text-5xl">
