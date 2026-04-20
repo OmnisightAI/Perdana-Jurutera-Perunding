@@ -3,35 +3,6 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main className="min-h-screen bg-white text-zinc-900">
-      <header className="sticky top-0 z-50 border-b border-zinc-200 bg-white/90 backdrop-blur">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-6">
-          <a href="#" className="flex items-center">
-            <Image
-              src="/images/Logo/PJPLogoOri3.png"
-              alt="Perdana Jurutera Perunding logo"
-              width={300}
-              height={120}
-              className="h-20 w-auto scale-280 md:h-24 md:scale-280"
-              priority
-            />
-          </a>
-
-          <nav className="hidden gap-8 text-sm font-medium md:flex">
-            <a href="#about" className="transition hover:opacity-60">
-              About
-            </a>
-            <a href="#services" className="transition hover:opacity-60">
-              Services
-            </a>
-            <a href="#projects" className="transition hover:opacity-60">
-              Projects
-            </a>
-            <a href="#contact" className="transition hover:opacity-60">
-              Contact
-            </a>
-          </nav>
-        </div>
-      </header>
 
       <section className="flex min-h-[78vh] items-center">
         <div className="mx-auto grid w-full max-w-7xl gap-10 px-6 py-12 md:py-16 lg:grid-cols-[0.95fr_1.05fr] lg:items-center lg:gap-14">
@@ -285,7 +256,7 @@ export default function Home() {
 
             <div className="grid gap-6 md:grid-cols-3">
               <a
-                href="#contact"
+                href="/projects/infrastructure-projects"
                 className="group overflow-hidden rounded-[2rem] bg-white transition hover:-translate-y-1 hover:shadow-md"
               >
                 <div className="h-56 overflow-hidden bg-zinc-200">

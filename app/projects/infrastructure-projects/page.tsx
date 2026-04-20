@@ -2,12 +2,28 @@ import Image from "next/image";
 
 const projects = [
   {
-    title: "Sabah Road Development Plan (ORIS)",
-    href: "/projects/oris",
-    image: "/images/Projects/Digital/Oris/Oris7.png",
+    title: "Jalan Donggongon Infrastructure Upgrades",
+    href: "/projects/jalan-donggongon",
+    image: "/images/Projects/Infrastructure/Jalan Doggongon.jpg",
     category: "Flagship Project",
     description:
-      "A digital road information and planning system supporting long-term infrastructure visibility, network planning, and more informed decision-making across Sabah.",
+      "Major road and infrastructure upgrades supporting long-term connectivity, drainage performance, and public infrastructure delivery.",
+  },
+  {
+    title: "Water Supply and Drainage Infrastructure",
+    href: "/projects/jalan-donggongon",
+    image: "/images/Projects/Infrastructure/Jalan Doggongon.jpg",
+    category: "Capability",
+    description:
+      "Delivery support across water supply systems, drainage, and core civil infrastructure planning for public and regional development.",
+  },
+  {
+    title: "Road and Regional Infrastructure Works",
+    href: "/projects/jalan-donggongon",
+    image: "/images/Projects/Infrastructure/Jalan Doggongon.jpg",
+    category: "Capability",
+    description:
+      "Broad experience across roads, drainage, supporting infrastructure, and practical civil delivery coordination.",
   },
 ];
 
@@ -20,12 +36,12 @@ export default function Page() {
             Projects
           </p>
           <h1 className="max-w-5xl text-4xl font-semibold tracking-tight md:text-6xl">
-            Digital & Smart Infrastructure
+            Infrastructure Projects
           </h1>
           <p className="mt-6 max-w-3xl text-lg leading-8 text-zinc-600">
-            Digital systems, GIS-supported planning, and information-led
-            infrastructure capability supporting long-term road network
-            visibility and more informed planning decisions across Sabah.
+            Roads, drainage, water supply, and major infrastructure works
+            supporting practical delivery and long-term civil performance across
+            Sabah.
           </p>
         </div>
       </section>
@@ -40,13 +56,13 @@ export default function Page() {
               Flagship
             </span>
             <span className="rounded-full border border-zinc-300 px-4 py-2 text-sm font-medium text-zinc-700">
-              GIS
+              Roads
             </span>
             <span className="rounded-full border border-zinc-300 px-4 py-2 text-sm font-medium text-zinc-700">
-              Planning
+              Drainage
             </span>
             <span className="rounded-full border border-zinc-300 px-4 py-2 text-sm font-medium text-zinc-700">
-              Digital Systems
+              Water Supply
             </span>
           </div>
         </div>
@@ -100,7 +116,7 @@ export default function Page() {
               Next Step
             </p>
             <h2 className="mt-2 text-2xl font-semibold tracking-tight">
-              Explore digital project work in more detail
+              Explore infrastructure project work in more detail
             </h2>
           </div>
 
@@ -112,10 +128,10 @@ export default function Page() {
               Back to Home
             </a>
             <a
-              href="/projects/oris"
+              href="/projects/jalan-donggongon"
               className="rounded-full bg-zinc-900 px-6 py-3 text-sm font-medium text-white transition hover:opacity-90"
             >
-              View ORIS Project
+              View Flagship Project
             </a>
           </div>
         </div>
