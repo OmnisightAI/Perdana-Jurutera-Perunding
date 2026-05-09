@@ -4,62 +4,66 @@ import Image from "next/image";
 import { useState } from "react";
 
 const galleryImages = [
-  "/images/Projects/Infrastructure/NXtaa.jpg",
-  "/images/Projects/Infrastructure/ffHoG.jpg",
-  "/images/Projects/Infrastructure/dMQLU.jpg",
+  "/images/Projects/Structures/UMS3.jpg",
+  "/images/Projects/Structures/UMS3.jpg",
+  "/images/Projects/Structures/UMS3.jpg",
+  "/images/Projects/Structures/UMS3.jpg",
 ];
 
 const generalInfo = [
-  { label: "Client", value: "KKLW / Jabatan Air Sabah" },
-  { label: "Location", value: "Apas Balung, Tawau, Sabah" },
-  { label: "Project Type", value: "Rural water supply infrastructure" },
-  { label: "Year", value: "2010 / 2012" },
-  { label: "Sector", value: "Water supply / civil infrastructure" },
+  { label: "Client", value: "JKR Sabah" },
+  { label: "Location", value: "Kota Kinabalu, Sabah" },
+  {
+    label: "Project Type",
+    value: "Major road upgrade and flyover infrastructure",
+  },
+  { label: "Year", value: "2017" },
+  { label: "Sector", value: "Roads, bridges, and urban infrastructure" },
   {
     label: "Scope",
     value:
-      "Water treatment, reservoirs, pipe bridge, booster pump station, and supporting water supply infrastructure",
+      "Upgrading of Jalan UMS and Jalan Sepanggar including grade-separated junctions and segmental box girder flyover works",
   },
 ];
 
 const keyFeatures = [
   {
-    title: "Water treatment infrastructure",
+    title: "Grade-separated junctions",
     description:
-      "Water treatment works supporting rural water supply capacity and service reliability for the Apas Balung area.",
+      "Road infrastructure works involving multiple grade-separated intersections to improve traffic flow and network performance.",
   },
   {
-    title: "Reservoir works",
+    title: "Segmental box girder flyovers",
     description:
-      "Storage infrastructure including reservoir components forming part of the wider rural water supply system.",
+      "Flyover structures using segmental box girder forms, supporting longer spans and efficient elevated road construction.",
   },
   {
-    title: "Pipe bridge and conveyance",
+    title: "Major urban road upgrade",
     description:
-      "Pipe bridge and pipeline infrastructure supporting water transfer across site and terrain constraints.",
+      "Upgrade works along Jalan UMS and Jalan Sepanggar supporting higher traffic demand and improved connectivity.",
   },
   {
-    title: "Booster pump station",
+    title: "Civil and structural coordination",
     description:
-      "Pumping infrastructure supporting distribution performance and continuity of supply.",
+      "Integrated road, bridge, drainage, and construction coordination across a complex urban infrastructure corridor.",
   },
 ];
 
 const benefits = [
   {
-    title: "Improved rural water access",
+    title: "Improved traffic movement",
     description:
-      "Supports delivery of essential water supply services to rural communities through coordinated public utility infrastructure.",
+      "Supports smoother vehicle flow through upgraded road geometry and grade-separated junction arrangements.",
   },
   {
-    title: "Reliable public infrastructure",
+    title: "Stronger urban connectivity",
     description:
-      "Combines treatment, storage, pumping, and pipe bridge components into a more complete water supply system.",
+      "Improves access between UMS, Sepanggar, Kingfisher, Rampayan, and surrounding Kota Kinabalu growth areas.",
   },
   {
-    title: "Regional development support",
+    title: "Major infrastructure capability",
     description:
-      "Provides critical civil infrastructure that supports community needs and long-term regional development.",
+      "Demonstrates capability in large-scale road and flyover infrastructure involving structural and civil engineering coordination.",
   },
 ];
 
@@ -71,8 +75,8 @@ export default function Page() {
       <section className="relative isolate overflow-hidden">
         <div className="relative h-[62vh] min-h-[460px] w-full">
           <Image
-            src="/images/Projects/Infrastructure/BALB Apas.jpg"
-            alt="Projek Bekalan Air Luar Bandar Apas Balung"
+            src="/images/Projects/Structures/UMS3.jpg"
+            alt="Jalan UMS and Sepanggar Priority Roads"
             fill
             priority
             className="object-cover"
@@ -87,13 +91,13 @@ export default function Page() {
             </p>
 
             <h1 className="max-w-5xl text-4xl font-semibold tracking-tight text-white md:text-6xl">
-              Projek Bekalan Air Luar Bandar Apas Balung
+              Jalan UMS & Sepanggar Priority Roads
             </h1>
 
             <p className="mt-6 max-w-3xl text-lg leading-8 text-white/85">
-              Rural water supply infrastructure supporting treatment, storage,
-              pumping, pipe bridge, and distribution works for Apas Balung,
-              Tawau.
+              Major road and flyover infrastructure works supporting upgraded
+              traffic movement, grade-separated junctions, and improved urban
+              connectivity in Kota Kinabalu.
             </p>
           </div>
         </div>
@@ -110,10 +114,10 @@ export default function Page() {
                 Project information at a glance
               </h2>
               <p className="mt-6 max-w-xl text-lg leading-8 text-zinc-600">
-                The Apas Balung project forms part of Perdana Jurutera
-                Perunding’s water infrastructure portfolio, covering essential
-                treatment, storage, conveyance, and pumping components for rural
-                water supply.
+                This project forms part of the Proposed Priority Roads Projects
+                in Kota Kinabalu, involving the upgrading of Jalan UMS and Jalan
+                Sepanggar with multiple grade-separated junctions and elevated
+                road infrastructure.
               </p>
             </div>
 
@@ -140,28 +144,29 @@ export default function Page() {
               Project Story
             </p>
             <h2 className="text-3xl font-semibold tracking-tight md:text-4xl">
-              Strengthening rural water supply infrastructure
+              Delivering major road and flyover infrastructure
             </h2>
 
             <div className="mt-6 space-y-6 text-lg leading-8 text-zinc-600">
               <p>
-                Projek Bekalan Air Luar Bandar Apas Balung supports the delivery
-                of essential water supply infrastructure through a coordinated
-                system of treatment, storage, pumping, pipe bridge, and
-                distribution assets.
+                The Jalan UMS and Jalan Sepanggar priority roads project
+                supports improved urban movement through road upgrading works,
+                elevated infrastructure, and grade-separated junctions across a
+                key transport corridor in Kota Kinabalu.
               </p>
 
               <p>
-                The project includes key public utility components such as water
-                treatment infrastructure, reservoir works, pipe bridge
-                infrastructure, and booster pump station facilities, reflecting
-                the practical requirements of rural water supply delivery.
+                The works include major junction improvements at Kingfisher,
+                UMS, Rampayan, and Sepanggar, with flyover structures and
+                segmental box girder infrastructure forming part of the broader
+                road upgrade package.
               </p>
 
               <p>
-                This work demonstrates Perdana Jurutera Perunding’s capability
-                in water supply infrastructure, civil coordination, and practical
-                engineering support for regional development.
+                This project demonstrates Perdana Jurutera Perunding’s capability
+                in road and bridge infrastructure, civil and structural
+                coordination, and practical support for major public
+                infrastructure delivery.
               </p>
             </div>
           </div>
@@ -169,8 +174,8 @@ export default function Page() {
           <div className="overflow-hidden rounded-[2rem] border border-zinc-200 bg-white">
             <div className="relative h-full min-h-[340px] bg-zinc-100">
               <Image
-                src="/images/Projects/Infrastructure/BALB Apas.jpg"
-                alt="Apas Balung water infrastructure visual"
+                src="/images/Projects/Structures/UMS3.jpg"
+                alt="UMS and Sepanggar flyover infrastructure"
                 fill
                 className="object-cover"
               />
@@ -255,7 +260,7 @@ export default function Page() {
                 >
                   <Image
                     src={image}
-                    alt={`Apas Balung project visual ${i + 1}`}
+                    alt={`UMS Sepanggar project visual ${i + 1}`}
                     fill
                     className="object-cover"
                   />
@@ -327,13 +332,14 @@ export default function Page() {
                 Project location
               </h2>
               <p className="mt-6 max-w-xl text-lg leading-8 text-zinc-600">
-                The Apas Balung water supply project is located in Tawau, Sabah.
-                The map below provides a general location reference.
+                The project is located around the Jalan UMS and Jalan Sepanggar
+                corridor in Kota Kinabalu, Sabah. The map below provides a
+                general location reference.
               </p>
 
               <div className="mt-8">
                 <a
-                  href="https://www.google.com/maps/place/Tawau,+Sabah,+Malaysia/"
+                  href="https://www.google.com/maps/place/Jalan+UMS,+Kota+Kinabalu,+Sabah,+Malaysia/"
                   target="_blank"
                   rel="noreferrer"
                   className="inline-flex rounded-full bg-zinc-900 px-6 py-3 text-sm font-medium text-white transition hover:opacity-90"
@@ -345,13 +351,13 @@ export default function Page() {
 
             <div className="overflow-hidden rounded-[2rem] border border-zinc-200 bg-white">
               <iframe
-                src="https://www.google.com/maps?q=Tawau,Sabah,Malaysia&output=embed"
+                src="https://www.google.com/maps?q=Jalan+UMS,Kota+Kinabalu,Sabah,Malaysia&output=embed"
                 width="100%"
                 height="460"
                 style={{ border: 0 }}
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Tawau map"
+                title="Jalan UMS Kota Kinabalu map"
               />
             </div>
           </div>
@@ -365,7 +371,7 @@ export default function Page() {
               Enquiry
             </p>
             <h2 className="mt-2 text-2xl font-semibold tracking-tight">
-              Speak with us about water supply infrastructure capability
+              Speak with us about road and flyover infrastructure capability
             </h2>
           </div>
 

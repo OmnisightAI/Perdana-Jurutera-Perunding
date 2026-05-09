@@ -11,7 +11,7 @@ const projects = [
   },
   {
     title: "Priority Roads: UMS & Sepanggar",
-    href: "/projects/ums-sepanggar-priority-roads",
+    href: "/projects/ums-sepanggar",
     image: "/images/Projects/Structures/UMS3.jpg",
     category: "Major Road & Flyover Infrastructure",
     description:
@@ -75,7 +75,7 @@ const projects = [
   },
   {
     title: "Projek Bekalan Air Luar Bandar Apas Balung",
-    href:"/projects/balb-apas-balung",
+    href: "/projects/balb-apas-balung",
     image: "/images/Projects/Infrastructure/BALB Apas.jpg",
     category: "Water Supply",
     description:
