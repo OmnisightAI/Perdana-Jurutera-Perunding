@@ -4,68 +4,61 @@ import Image from "next/image";
 import { useState } from "react";
 
 const galleryImages = [
-  "/images/Projects/Structures/UMS1.jpg",
-  "/images/Projects/Structures/UMS2.jpg",
-  "/images/Projects/Structures/UMS3.jpg",
-  "/images/Projects/Structures/UMS4.jpg",
-  "/images/Projects/Structures/UMS5.jpg",
-  "/images/Projects/Structures/UMS6.jpg"
+  "/images/Projects/Traffic/KK CBD.jpg",
+  "/images/Projects/Traffic/masterplan2.jpg",
 ];
 
 const generalInfo = [
-  { label: "Client", value: "JKR Sabah" },
-  { label: "Location", value: "Kota Kinabalu, Sabah" },
-  {
-    label: "Project Type",
-    value: "Major road upgrade and flyover infrastructure",
-  },
-  { label: "Year", value: "2017" },
-  { label: "Sector", value: "Roads, bridges, and urban infrastructure" },
+  { label: "Client", value: "DBKK Holdings Sdn Bhd" },
+  { label: "Location", value: "Kota Kinabalu CBD, Sabah" },
+  { label: "Project Type", value: "Urban transport master planning" },
+  { label: "Year", value: "2015" },
+  { label: "Sector", value: "Traffic, transport, and urban infrastructure" },
   {
     label: "Scope",
     value:
-      "Upgrading of Jalan UMS and Jalan Sepanggar including grade-separated junctions and segmental box girder flyover works",
+      "Master plan and detailed design for Kota Kinabalu CBD traffic improvement and urban transport planning",
   },
 ];
 
 const keyFeatures = [
   {
-    title: "Grade-separated junctions",
+    title: "Urban transport master planning",
     description:
-      "Road infrastructure works involving multiple grade-separated intersections to improve traffic flow and network performance.",
+      "Strategic planning for traffic movement, access, and transport improvement across the Kota Kinabalu CBD area.",
   },
   {
-    title: "Segmental box girder flyovers",
+    title: "Traffic improvement strategy",
     description:
-      "Flyover structures using segmental box girder forms, supporting longer spans and efficient elevated road construction.",
+      "Development of improvement measures to support better circulation, road network performance, and urban accessibility.",
   },
   {
-    title: "Major urban road upgrade",
+    title: "Detailed design support",
     description:
-      "Upgrade works along Jalan UMS and Jalan Sepanggar supporting higher traffic demand and improved connectivity.",
+      "Engineering design inputs supporting the implementation of selected traffic and infrastructure improvement schemes.",
   },
   {
-    title: "Civil and structural coordination",
+    title: "CBD network coordination",
     description:
-      "Integrated road, bridge, drainage, and construction coordination across a complex urban infrastructure corridor.",
+      "Coordination of planning considerations across a dense urban road network with multiple land use and movement demands.",
   },
 ];
 
 const benefits = [
   {
-    title: "Improved traffic movement",
+    title: "Improved city movement",
     description:
-      "Supports smoother vehicle flow through upgraded road geometry and grade-separated junction arrangements.",
+      "Supports better traffic circulation and transport planning within Kota Kinabalu’s central business district.",
   },
   {
-    title: "Stronger urban connectivity",
+    title: "Long-term planning clarity",
     description:
-      "Improves access between UMS, Sepanggar, Kingfisher, Rampayan, and surrounding Kota Kinabalu growth areas.",
+      "Provides a structured framework for future road and transport improvement works in the CBD.",
   },
   {
-    title: "Major infrastructure capability",
+    title: "Urban infrastructure support",
     description:
-      "Demonstrates capability in large-scale road and flyover infrastructure involving structural and civil engineering coordination.",
+      "Links transport planning, detailed design, and practical infrastructure delivery into one coordinated city improvement strategy.",
   },
 ];
 
@@ -77,8 +70,8 @@ export default function Page() {
       <section className="relative isolate overflow-hidden">
         <div className="relative h-[62vh] min-h-[460px] w-full">
           <Image
-            src="/images/Projects/Structures/UMS3.jpg"
-            alt="Jalan UMS and Sepanggar Priority Roads"
+            src="/images/Projects/Traffic/KK CBD.jpg"
+            alt="Kota Kinabalu CBD traffic improvement and urban transport master plan"
             fill
             priority
             className="object-cover"
@@ -93,13 +86,13 @@ export default function Page() {
             </p>
 
             <h1 className="max-w-5xl text-4xl font-semibold tracking-tight text-white md:text-6xl">
-              Jalan UMS & Sepanggar Priority Roads
+              K.K. Traffic Improvement & Urban Transport Master Plan
             </h1>
 
             <p className="mt-6 max-w-3xl text-lg leading-8 text-white/85">
-              Major road and flyover infrastructure works supporting upgraded
-              traffic movement, grade-separated junctions, and improved urban
-              connectivity in Kota Kinabalu.
+              Master planning and detailed design for traffic improvement,
+              transport movement, and urban infrastructure coordination across
+              Kota Kinabalu’s central business district.
             </p>
           </div>
         </div>
@@ -116,10 +109,9 @@ export default function Page() {
                 Project information at a glance
               </h2>
               <p className="mt-6 max-w-xl text-lg leading-8 text-zinc-600">
-                This project forms part of the Proposed Priority Roads Projects
-                in Kota Kinabalu, involving the upgrading of Jalan UMS and Jalan
-                Sepanggar with multiple grade-separated junctions and elevated
-                road infrastructure.
+                The Kota Kinabalu CBD master plan supports traffic improvement,
+                transport planning, and detailed design for one of Sabah’s most
+                important urban centres.
               </p>
             </div>
 
@@ -146,29 +138,28 @@ export default function Page() {
               Project Story
             </p>
             <h2 className="text-3xl font-semibold tracking-tight md:text-4xl">
-              Delivering major road and flyover infrastructure
+              Planning better movement through Kota Kinabalu CBD
             </h2>
 
             <div className="mt-6 space-y-6 text-lg leading-8 text-zinc-600">
               <p>
-                The Jalan UMS and Jalan Sepanggar priority roads project
-                supports improved urban movement through road upgrading works,
-                elevated infrastructure, and grade-separated junctions across a
-                key transport corridor in Kota Kinabalu.
+                The K.K. Traffic Improvement and Urban Transport Master Plan
+                provides a structured planning framework for improving traffic
+                circulation, accessibility, and urban movement within the Kota
+                Kinabalu central business district.
               </p>
 
               <p>
-                The works include major junction improvements at Kingfisher,
-                UMS, Rampayan, and Sepanggar, with flyover structures and
-                segmental box girder infrastructure forming part of the broader
-                road upgrade package.
+                The work combines master planning with detailed design support,
+                helping translate broad transport objectives into practical
+                traffic and infrastructure improvement schemes.
               </p>
 
               <p>
                 This project demonstrates Perdana Jurutera Perunding’s capability
-                in road and bridge infrastructure, civil and structural
-                coordination, and practical support for major public
-                infrastructure delivery.
+                in urban transport planning, traffic improvement strategy,
+                network review, and engineering design coordination for complex
+                city environments.
               </p>
             </div>
           </div>
@@ -176,8 +167,8 @@ export default function Page() {
           <div className="overflow-hidden rounded-[2rem] border border-zinc-200 bg-white">
             <div className="relative h-full min-h-[340px] bg-zinc-100">
               <Image
-                src="/images/Projects/Structures/UMS3.jpg"
-                alt="UMS and Sepanggar flyover infrastructure"
+                src="/images/Projects/Traffic/KK CBD.jpg"
+                alt="Kota Kinabalu CBD master plan visual"
                 fill
                 className="object-cover"
               />
@@ -262,7 +253,7 @@ export default function Page() {
                 >
                   <Image
                     src={image}
-                    alt={`UMS Sepanggar project visual ${i + 1}`}
+                    alt={`Kota Kinabalu CBD master plan visual ${i + 1}`}
                     fill
                     className="object-cover"
                   />
@@ -334,14 +325,13 @@ export default function Page() {
                 Project location
               </h2>
               <p className="mt-6 max-w-xl text-lg leading-8 text-zinc-600">
-                The project is located around the Jalan UMS and Jalan Sepanggar
-                corridor in Kota Kinabalu, Sabah. The map below provides a
-                general location reference.
+                The master plan relates to the Kota Kinabalu CBD area. The map
+                below provides a general location reference.
               </p>
 
               <div className="mt-8">
                 <a
-                  href="https://www.google.com/maps/place/Jalan+UMS,+Kota+Kinabalu,+Sabah,+Malaysia/"
+                  href="https://www.google.com/maps/place/Kota+Kinabalu,+Sabah,+Malaysia/"
                   target="_blank"
                   rel="noreferrer"
                   className="inline-flex rounded-full bg-zinc-900 px-6 py-3 text-sm font-medium text-white transition hover:opacity-90"
@@ -353,13 +343,13 @@ export default function Page() {
 
             <div className="overflow-hidden rounded-[2rem] border border-zinc-200 bg-white">
               <iframe
-                src="https://www.google.com/maps?q=Jalan+UMS,Kota+Kinabalu,Sabah,Malaysia&output=embed"
+                src="https://www.google.com/maps?q=Kota+Kinabalu+CBD,Sabah,Malaysia&output=embed"
                 width="100%"
                 height="460"
                 style={{ border: 0 }}
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Jalan UMS Kota Kinabalu map"
+                title="Kota Kinabalu CBD map"
               />
             </div>
           </div>
@@ -373,7 +363,7 @@ export default function Page() {
               Enquiry
             </p>
             <h2 className="mt-2 text-2xl font-semibold tracking-tight">
-              Speak with us about road and flyover infrastructure capability
+              Speak with us about urban transport planning capability
             </h2>
           </div>
 

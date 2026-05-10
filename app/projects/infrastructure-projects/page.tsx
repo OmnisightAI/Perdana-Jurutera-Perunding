@@ -19,7 +19,7 @@ const projects = [
   },
   {
     title: "K.K. Traffic Improvement & Urban Transport Master Plan",
-    href: "/projects/kk-cbd-master-plan",
+    href: "/projects/master-plan",
     image: "/images/Projects/Traffic/KK CBD.jpg",
     category: "Urban Transport Master Planning",
     description:
