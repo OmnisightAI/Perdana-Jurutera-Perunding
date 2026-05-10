@@ -261,7 +261,7 @@ export default function Home() {
               >
                 <div className="h-56 overflow-hidden bg-zinc-200">
                   <Image
-                    src="/images/Projects/Infrastructure/Jalan Doggongon.jpg"
+                    src="/images/Projects/UMS/UMS1.jpg"
                     alt="Infrastructure projects"
                     width={1200}
                     height={800}
@@ -277,6 +277,10 @@ export default function Home() {
                     Roads, drainage, water supply, and major infrastructure
                     works across Sabah.
                   </p>
+
+                  <p className="mt-6 text-sm font-medium text-red-600">
+                  Explore Infrastructure capability
+                </p>
                 </div>
               </a>
 
@@ -299,9 +303,13 @@ export default function Home() {
                     Traffic &amp; Transport
                   </h3>
                   <p className="mt-2 text-zinc-600">
-                    Traffic impact studies, transport planning, and road
+                    Master Plan studies,traffic impact studies, transport planning, and road
                     network analysis.
                   </p>
+
+                  <p className="mt-6 text-sm font-medium text-red-600">
+                  Explore Traffic & Transport capability
+                </p>
                 </div>
               </a>
 
@@ -311,7 +319,7 @@ export default function Home() {
               >
                 <div className="h-56 overflow-hidden bg-zinc-200">
                   <Image
-                    src="/images/Projects/Structures/UMS3.jpg"
+                    src="/images/Projects/UMS/UMS4.jpg"
                     alt="Civil and structural engineering"
                     width={1200}
                     height={800}
@@ -327,6 +335,10 @@ export default function Home() {
                     Civil and structural design, engineering coordination, and
                     supervision.
                   </p>
+
+                  <p className="mt-6 text-sm font-medium text-red-600">
+                  Explore Civil & Structural capability
+                </p>
                 </div>
               </a>
             </div>

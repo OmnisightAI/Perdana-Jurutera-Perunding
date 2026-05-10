@@ -4,7 +4,7 @@ const projects = [
   {
     title: "Jalan Donggongon Infrastructure Upgrades",
     href: "/projects/jalan-donggongon",
-    image: "/images/Projects/Infrastructure/Jalan Doggongon.jpg",
+    image: "/images/Projects/Donggongon/Jalan Doggongon.jpg",
     category: "Road & Bridge Infrastructure",
     description:
       "Major road and infrastructure upgrades supporting long-term connectivity, drainage performance, and public infrastructure delivery.",
@@ -12,7 +12,7 @@ const projects = [
   {
     title: "Priority Roads: UMS & Sepanggar",
     href: "/projects/ums-sepanggar",
-    image: "/images/Projects/Structures/UMS3.jpg",
+    image: "/images/Projects/UMS/UMS3.jpg",
     category: "Major Road & Flyover Infrastructure",
     description:
       "Upgrading of Jalan UMS and Jalan Sepanggar including multiple grade-separated junctions and segmental box girder flyover works.",
@@ -28,7 +28,7 @@ const projects = [
   {
     title: "Priority Roads: Jalan Tun Fuad Stephens",
     href: "/projects/tun-fuad-priority-roads",
-    image: "/images/Projects/Infrastructure/Priority roads.jpg",
+    image: "/images/Projects/TunFuad/tJCiw.jpg",
     category: "Urban Road Upgrade",
     description:
       "Upgrading of Jalan Tun Fuad Stephens including improvements to key junctions and urban road infrastructure.",
@@ -36,7 +36,7 @@ const projects = [
   {
     title: "Kota Kinabalu Traffic Study Phase II (2016–2040)",
     href: "/projects/kk-traffic-study",
-    image: "/images/Projects/Traffic/KKTS.jpg",
+    image: "/images/Projects/Trafficstudy2/4mSD9.jpg",
     category: "Traffic Study & Transport Planning",
     description:
       "Long-term traffic study for Kota Kinabalu involving junction surveys, roadside interviews, travel time surveys, and data coding.",
@@ -44,7 +44,7 @@ const projects = [
   {
     title: "Priority Roads: Jalan Kolam–Minintod",
     href: "/projects/jalan-kolam-minintod",
-    image: "/images/Projects/Infrastructure/Pr3.jpg",
+    image: "/images/Projects/Kolam/Kolam.jpg",
     category: "Road & Flyover Infrastructure",
     description:
       "Upgrading of Jalan Kolam from Sunny Garden to Kg. Minintod including two flyovers.",
@@ -52,7 +52,7 @@ const projects = [
   {
     title: "DBKK Skybridge & Pedestrian Linkage",
     href: "/projects/dbkk-skybridge",
-    image: "/images/Projects/Structures/DBKK Skybridge.jpg",
+    image: "/images/Projects/Sky/Sky2.jpg",
     category: "Pedestrian & Urban Infrastructure",
     description:
       "Skybridge, pedestrian linkage, and traffic improvement works connecting Asia City and the Oceanus development area.",
@@ -68,7 +68,7 @@ const projects = [
   {
     title: "Schools & Institutional Buildings",
     href: "/projects/schools-institutional",
-    image: "/images/Projects/Buildings/SK Pendidikan Khas.jpg",
+    image: "/images/Projects/Schools/tcMxS (1).jpg",
     category: "C&S Institutional Infrastructure",
     description:
       "Civil and structural engineering support for schools and institutional developments across Sabah.",
@@ -84,7 +84,7 @@ const projects = [
   {
     title: "Bekalan Air Luar Bandar Keranaan",
     href: "/projects/balb-keranaan",
-    image: "/images/Projects/Infrastructure/waterKeranaan.jpg",
+    image: "/images/Projects/Keranaan/rYJ5K.jpg",
     category: "Rural Water Infrastructure",
     description:
       "Rural water supply system including mountain stream intake, raw water pipeline, pipe bridge, chlorination house, and HDPE storage tanks.",
@@ -92,7 +92,7 @@ const projects = [
   {
     title: "Jalan Sook–Tulid–Sinua",
     href: "/projects/sook-tulid-sinua",
-    image: "/images/Projects/Infrastructure/SookTulid.jpg",
+    image: "/images/Projects/Sook/QjUm4.jpg",
     category: "Regional Road Infrastructure",
     description:
       "A 30.5 km JKR road project with bridge works, pile head construction, field density testing, and completed asphalt road sections.",
@@ -100,7 +100,7 @@ const projects = [
   {
     title: "Jalan Bokara Batu Sapi Phase 2",
     href: "/projects/bokara-batu-sapi",
-    image: "/images/Projects/Infrastructure/Bokara.jpg",
+    image: "/images/Projects/Bokara/NSUaa.jpg",
     category: "Dual Carriageway Roadworks",
     description:
       "A 4 km dual carriageway project in Sandakan supported by culvert works, soil consolidation, guniting wall, and slope repair works.",
@@ -108,7 +108,7 @@ const projects = [
   {
     title: "Karamunsing Interchange System",
     href: "/projects/karamunsing-interchange",
-    image: "/images/Projects/Traffic/Karamunsing.jpg",
+    image: "/images/Projects/Karamunsing/image_059.jpg",
     category: "Interchange & Road Network Planning",
     description:
       "Road network planning, design review, and road safety audit work for the Karamunsing Interchange System in Kota Kinabalu.",

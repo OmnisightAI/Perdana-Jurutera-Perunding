@@ -28,15 +28,15 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <header className="sticky top-0 z-50 border-b border-zinc-200 bg-white">
-          <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-6">
-            <a href="/" className="flex items-center">
+        <header className="border-b border-zinc-200 bg-white">
+          <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-5 md:px-6 md:py-6">
+            <a href="/" className="flex shrink-0 items-center">
               <Image
                 src="/images/Logo/PJPLogoOri3.png"
                 alt="Perdana Jurutera Perunding logo"
-                width={300}
-                height={120}
-                className="h-20 w-auto scale-280 md:h-24 md:scale-280"
+                width={360}
+                height={140}
+                className="h-16 w-auto object-contain md:h-24"
                 priority
               />
             </a>
