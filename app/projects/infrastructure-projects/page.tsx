@@ -75,7 +75,7 @@ const projects = [
   },
   {
     title: "Projek Bekalan Air Luar Bandar Apas Balung",
-    href: "/projects/balb-apas-balung",
+    href: "/projects/apas-balung",
     image: "/images/Projects/Infrastructure/BALB Apas.jpg",
     category: "Water Supply",
     description:
