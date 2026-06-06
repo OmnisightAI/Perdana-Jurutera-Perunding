@@ -4,12 +4,17 @@ import Image from "next/image";
 import { useState } from "react";
 
 const galleryImages = [
-  "/images/Projects/Infrastructure/Jalan Doggongon Layout.jpg",
-  "/images/Projects/Infrastructure/Round About Archi.jpg",
+  "/images/Projects/Donggongon/Artis Impression/D3.png",
+  "/images/Projects/Donggongon/Artis Impression/D4.png",
+  "/images/Projects/Donggongon/Artis Impression/D5.png",
+  "/images/Projects/Donggongon/Artis Impression/D6.png",
+  "/images/Projects/Donggongon/Artis Impression/D7.png",
+  "/images/Projects/Donggongon/D8.jpg",
+  "/images/Projects/Donggongon/D9.jpg",
 ];
 
 const generalInfo = [
-  { label: "Location", value: "Sabah, Malaysia" },
+  { label: "Location", value: "Jalan Donggongon, Penampang, Sabah, Malaysia" },
   { label: "Project Type", value: "Road and infrastructure upgrade works" },
   { label: "Sector", value: "Civil infrastructure" },
   { label: "Stage", value: "Infrastructure delivery and upgrade support" },
@@ -66,7 +71,7 @@ export default function Page() {
       <section className="relative isolate overflow-hidden">
         <div className="relative h-[62vh] min-h-[460px] w-full">
           <Image
-            src="/images/Projects/Infrastructure/Jalan Doggongon.jpg"
+            src="/images/Projects/Donggongon/Artis Impression/D3.png"
             alt="Jalan Donggongon infrastructure project"
             fill
             priority
@@ -329,7 +334,7 @@ export default function Page() {
 
               <div className="mt-8">
                 <a
-                  href="https://www.google.com/maps/place/Sabah,+Malaysia/"
+                  href="https://www.google.com/maps/search/?api=1&query=5.90864952219029, 116.10110212433035"
                   target="_blank"
                   rel="noreferrer"
                   className="inline-flex rounded-full bg-zinc-900 px-6 py-3 text-sm font-medium text-white transition hover:opacity-90"
@@ -341,7 +346,7 @@ export default function Page() {
 
             <div className="overflow-hidden rounded-[2rem] border border-zinc-200 bg-white">
               <iframe
-                src="https://www.google.com/maps?q=Sabah,Malaysia&output=embed"
+                src="https://www.google.com/maps?q=5.90864952219029, 116.101102124330&output=embed"
                 width="100%"
                 height="460"
                 style={{ border: 0 }}

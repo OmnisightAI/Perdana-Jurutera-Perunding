@@ -4,12 +4,10 @@ import Image from "next/image";
 import { useState } from "react";
 
 const galleryImages = [
-  "/images/Projects/Structures/UMS1.jpg",
-  "/images/Projects/Structures/UMS2.jpg",
-  "/images/Projects/Structures/UMS3.jpg",
-  "/images/Projects/Structures/UMS4.jpg",
-  "/images/Projects/Structures/UMS5.jpg",
-  "/images/Projects/Structures/UMS6.jpg"
+  "/images/Projects/UMS/UMS7.png",
+  "/images/Projects/UMS/UMS2.jpg",
+  "/images/Projects/UMS/UMS6.jpg",
+
 ];
 
 const generalInfo = [
@@ -77,7 +75,7 @@ export default function Page() {
       <section className="relative isolate overflow-hidden">
         <div className="relative h-[62vh] min-h-[460px] w-full">
           <Image
-            src="/images/Projects/Structures/UMS3.jpg"
+            src="/images/Projects/UMS/UMS7.png"
             alt="Jalan UMS and Sepanggar Priority Roads"
             fill
             priority

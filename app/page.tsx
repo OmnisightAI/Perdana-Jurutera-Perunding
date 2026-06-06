@@ -1,8 +1,20 @@
 import Image from "next/image";
 
+const trustedClients = [
+  "JKR Sabah",
+  "DBKK",
+  "JKR Malaysia",
+  "Jabatan Air Sabah",
+  "KPLB",
+  "Universiti Malaysia Sabah",
+  "SEDIA",
+  "Ministry of Education Malaysia",
+];
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-white text-zinc-900">
+      {/* HERO VIDEO */}
       <section className="relative min-h-[85vh] overflow-hidden">
         <video
           className="absolute inset-0 h-full w-full object-cover"
@@ -35,8 +47,8 @@ export default function Home() {
             </p>
 
             <p className="mt-4 text-sm text-white/70">
-              Trusted across public and private sector infrastructure projects in
-              Sabah.
+              Trusted across public and private sector infrastructure projects
+              in Sabah.
             </p>
 
             <div className="mt-10 flex flex-wrap gap-4">
@@ -58,6 +70,7 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ABOUT */}
       <section
         id="about"
         className="border-t border-zinc-200 bg-zinc-50 py-20 md:py-28"
@@ -128,87 +141,84 @@ export default function Home() {
               </div>
 
               <div className="space-y-8">
-                <div className="relative pl-8">
-                  <div className="absolute left-0 top-2 h-full w-px bg-zinc-300" />
-                  <div className="absolute left-[-5px] top-2 h-3 w-3 rounded-full bg-red-600" />
+                {[
+                  {
+                    year: "1994",
+                    title: "Firm established",
+                    text: "Perdana Jurutera Perunding was established in Sabah and began building its consulting foundation in civil and infrastructure engineering.",
+                  },
+                  {
+                    year: "2000s",
+                    title:
+                      "Expansion into public infrastructure and transport work",
+                    text: "The practice expanded its delivery across transport studies, roadworks, drainage, water supply, and public sector infrastructure support.",
+                  },
+                  {
+                    year: "2010s",
+                    title:
+                      "Major roads, structures, and urban engineering support",
+                    text: "The firm contributed to larger-scale infrastructure, traffic, civil, and structural projects across Sabah, supporting both public and private developments.",
+                  },
+                  {
+                    year: "2020s",
+                    title:
+                      "Digital systems and state-level infrastructure planning",
+                    text: "Recent work includes digital infrastructure systems, ORIS, and data-supported planning capability alongside continued engineering delivery across Sabah.",
+                  },
+                ].map((item, index) => (
+                  <div key={item.year} className="relative pl-8">
+                    <div
+                      className={`absolute left-0 top-2 w-px bg-zinc-300 ${
+                        index === 3 ? "h-8" : "h-full"
+                      }`}
+                    />
+                    <div className="absolute left-[-5px] top-2 h-3 w-3 rounded-full bg-red-600" />
 
-                  <p className="text-sm font-medium uppercase tracking-[0.18em] text-zinc-500">
-                    1994
-                  </p>
+                    <p className="text-sm font-medium uppercase tracking-[0.18em] text-zinc-500">
+                      {item.year}
+                    </p>
 
-                  <h4 className="mt-2 text-lg font-semibold text-zinc-900">
-                    Firm established
-                  </h4>
+                    <h4 className="mt-2 text-lg font-semibold text-zinc-900">
+                      {item.title}
+                    </h4>
 
-                  <p className="mt-2 leading-7 text-zinc-600">
-                    Perdana Jurutera Perunding was established in Sabah and
-                    began building its consulting foundation in civil and
-                    infrastructure engineering.
-                  </p>
-                </div>
-
-                <div className="relative pl-8">
-                  <div className="absolute left-0 top-2 h-full w-px bg-zinc-300" />
-                  <div className="absolute left-[-5px] top-2 h-3 w-3 rounded-full bg-red-600" />
-
-                  <p className="text-sm font-medium uppercase tracking-[0.18em] text-zinc-500">
-                    2000s
-                  </p>
-
-                  <h4 className="mt-2 text-lg font-semibold text-zinc-900">
-                    Expansion into public infrastructure and transport work
-                  </h4>
-
-                  <p className="mt-2 leading-7 text-zinc-600">
-                    The practice expanded its delivery across transport studies,
-                    roadworks, drainage, water supply, and public sector
-                    infrastructure support.
-                  </p>
-                </div>
-
-                <div className="relative pl-8">
-                  <div className="absolute left-0 top-2 h-full w-px bg-zinc-300" />
-                  <div className="absolute left-[-5px] top-2 h-3 w-3 rounded-full bg-red-600" />
-
-                  <p className="text-sm font-medium uppercase tracking-[0.18em] text-zinc-500">
-                    2010s
-                  </p>
-
-                  <h4 className="mt-2 text-lg font-semibold text-zinc-900">
-                    Major roads, structures, and urban engineering support
-                  </h4>
-
-                  <p className="mt-2 leading-7 text-zinc-600">
-                    The firm contributed to larger-scale infrastructure, traffic,
-                    civil, and structural projects across Sabah, supporting both
-                    public and private developments.
-                  </p>
-                </div>
-
-                <div className="relative pl-8">
-                  <div className="absolute left-0 top-2 h-8 w-px bg-zinc-300" />
-                  <div className="absolute left-[-5px] top-2 h-3 w-3 rounded-full bg-red-600" />
-
-                  <p className="text-sm font-medium uppercase tracking-[0.18em] text-zinc-500">
-                    2020s
-                  </p>
-
-                  <h4 className="mt-2 text-lg font-semibold text-zinc-900">
-                    Digital systems and state-level infrastructure planning
-                  </h4>
-
-                  <p className="mt-2 leading-7 text-zinc-600">
-                    Recent work includes digital infrastructure systems, ORIS,
-                    and data-supported planning capability alongside continued
-                    engineering delivery across Sabah.
-                  </p>
-                </div>
+                    <p className="mt-2 leading-7 text-zinc-600">
+                      {item.text}
+                    </p>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
         </div>
       </section>
 
+      {/* TRUSTED COMPANY CYCLE - NOW AFTER ABOUT */}
+      <section className="border-y border-zinc-200 bg-white py-10">
+        <div className="mx-auto max-w-7xl px-6">
+          <p className="mb-6 text-center text-xs font-medium uppercase tracking-[0.25em] text-zinc-500">
+            Trusted by public and institutional clients
+          </p>
+
+          <div className="relative overflow-hidden">
+            <div className="pointer-events-none absolute left-0 top-0 z-10 h-full w-20 bg-gradient-to-r from-white to-transparent" />
+            <div className="pointer-events-none absolute right-0 top-0 z-10 h-full w-20 bg-gradient-to-l from-white to-transparent" />
+
+            <div className="flex w-max animate-logo-scroll items-center gap-6">
+              {[...trustedClients, ...trustedClients].map((client, index) => (
+                <div
+                  key={`${client}-${index}`}
+                  className="flex h-20 w-56 shrink-0 items-center justify-center rounded-2xl border border-zinc-200 bg-zinc-50 px-6 text-center text-sm font-semibold uppercase tracking-[0.16em] text-zinc-600 transition hover:border-red-200 hover:text-red-600"
+                >
+                  {client}
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* SERVICES */}
       <section id="services" className="py-20 md:py-28">
         <div className="mx-auto max-w-7xl px-6">
           <p className="mb-3 text-sm uppercase tracking-[0.2em] text-red-600">
@@ -220,55 +230,37 @@ export default function Home() {
           </h2>
 
           <div className="mt-14 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
-            <div className="rounded-[2rem] border border-zinc-200 p-8">
-              <h3 className="text-xl font-semibold">
-                Traffic Engineering &amp; Transport Planning
-              </h3>
-
-              <p className="mt-4 leading-7 text-zinc-600">
-                Traffic impact studies, transport planning, junction
-                assessment, and road network analysis for public and private
-                developments.
-              </p>
-            </div>
-
-            <div className="rounded-[2rem] border border-zinc-200 p-8">
-              <h3 className="text-xl font-semibold">
-                Civil &amp; Structural Engineering
-              </h3>
-
-              <p className="mt-4 leading-7 text-zinc-600">
-                Civil and structural design support for roads, drainage, water
-                supply, buildings, and infrastructure works.
-              </p>
-            </div>
-
-            <div className="rounded-[2rem] border border-zinc-200 p-8">
-              <h3 className="text-xl font-semibold">
-                Road Safety Audit &amp; Design Review
-              </h3>
-
-              <p className="mt-4 leading-7 text-zinc-600">
-                Road safety audit, design checking, technical review, and
-                engineering assessment to support practical and compliant
-                delivery.
-              </p>
-            </div>
-
-            <div className="rounded-[2rem] border border-zinc-200 p-8">
-              <h3 className="text-xl font-semibold">
-                Infrastructure Planning &amp; Supervision
-              </h3>
-
-              <p className="mt-4 leading-7 text-zinc-600">
-                Infrastructure planning, project coordination, supervision, and
-                consulting support across multidisciplinary developments.
-              </p>
-            </div>
+            {[
+              {
+                title: "Traffic Engineering & Transport Planning",
+                text: "Traffic impact studies, transport planning, junction assessment, and road network analysis for public and private developments.",
+              },
+              {
+                title: "Civil & Structural Engineering",
+                text: "Civil and structural design support for roads, drainage, water supply, buildings, and infrastructure works.",
+              },
+              {
+                title: "Road Safety Audit & Design Review",
+                text: "Road safety audit, design checking, technical review, and engineering assessment to support practical and compliant delivery.",
+              },
+              {
+                title: "Infrastructure Planning & Supervision",
+                text: "Infrastructure planning, project coordination, supervision, and consulting support across multidisciplinary developments.",
+              },
+            ].map((service) => (
+              <div
+                key={service.title}
+                className="rounded-[2rem] border border-zinc-200 p-8"
+              >
+                <h3 className="text-xl font-semibold">{service.title}</h3>
+                <p className="mt-4 leading-7 text-zinc-600">{service.text}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
+      {/* PROJECTS */}
       <section id="projects" className="bg-zinc-50 py-20 md:py-28">
         <div className="mx-auto max-w-7xl px-6">
           <p className="mb-3 text-sm uppercase tracking-[0.2em] text-red-600">
@@ -286,7 +278,7 @@ export default function Home() {
             >
               <div className="h-72 overflow-hidden bg-zinc-200 md:h-full">
                 <Image
-                  src="/images/Projects/Digital/Oris/Oris7.png"
+                  src="/images/Projects/Digital/Oris/Oris3.png"
                   alt="Digital infrastructure systems ORIS"
                   width={1600}
                   height={1000}
@@ -337,19 +329,19 @@ export default function Home() {
                   </p>
 
                   <p className="mt-6 text-sm font-medium text-red-600">
-                    Explore infrastructure capability
+                    Explore infrastructure
                   </p>
                 </div>
               </a>
 
               <a
-                href="#contact"
+                href="/projects/master-plan"
                 className="group overflow-hidden rounded-[2rem] bg-white transition hover:-translate-y-1 hover:shadow-md"
               >
                 <div className="h-56 overflow-hidden bg-zinc-200">
                   <Image
                     src="/images/Projects/Traffic/KK CBD.jpg"
-                    alt="Traffic and transport"
+                    alt="Master planning and traffic studies"
                     width={1200}
                     height={800}
                     className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
@@ -358,28 +350,28 @@ export default function Home() {
 
                 <div className="p-6">
                   <h3 className="text-xl font-semibold">
-                    Traffic &amp; Transport
+                    Master Planning &amp; Traffic Studies
                   </h3>
 
                   <p className="mt-2 text-zinc-600">
-                    Master plan studies, traffic impact studies, transport
-                    planning, and road network analysis.
+                    Strategic transport studies, traffic impact assessments, and
+                    urban transport planning.
                   </p>
 
                   <p className="mt-6 text-sm font-medium text-red-600">
-                    Explore traffic &amp; transport capability
+                    Explore planning
                   </p>
                 </div>
               </a>
 
               <a
-                href="#contact"
+                href="/projects/infrastructure-projects"
                 className="group overflow-hidden rounded-[2rem] bg-white transition hover:-translate-y-1 hover:shadow-md"
               >
                 <div className="h-56 overflow-hidden bg-zinc-200">
                   <Image
-                    src="/images/Projects/UMS/UMS4.jpg"
-                    alt="Civil and structural engineering"
+                    src="/images/Projects/Infrastructure/BALB Apas.jpg"
+                    alt="Water supply and civil infrastructure"
                     width={1200}
                     height={800}
                     className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
@@ -388,16 +380,16 @@ export default function Home() {
 
                 <div className="p-6">
                   <h3 className="text-xl font-semibold">
-                    Civil &amp; Structural
+                    Water &amp; Civil Infrastructure
                   </h3>
 
                   <p className="mt-2 text-zinc-600">
-                    Civil and structural design, engineering coordination, and
-                    supervision.
+                    Water supply, drainage, reservoirs, pipe bridges, and civil
+                    infrastructure support.
                   </p>
 
                   <p className="mt-6 text-sm font-medium text-red-600">
-                    Explore civil &amp; structural capability
+                    Explore civil works
                   </p>
                 </div>
               </a>
@@ -406,28 +398,43 @@ export default function Home() {
         </div>
       </section>
 
+      {/* CONTACT */}
       <section id="contact" className="py-20 md:py-28">
-        <div className="mx-auto max-w-4xl px-6 text-center">
-          <p className="mb-3 text-sm uppercase tracking-[0.2em] text-red-600">
-            Contact
-          </p>
+        <div className="mx-auto max-w-7xl px-6">
+          <div className="rounded-[2rem] bg-zinc-950 p-8 text-white md:p-12">
+            <p className="mb-3 text-sm uppercase tracking-[0.2em] text-red-300">
+              Contact
+            </p>
 
-          <h2 className="text-3xl font-semibold tracking-tight md:text-5xl">
-            Let&apos;s discuss your next project.
-          </h2>
+            <h2 className="max-w-3xl text-3xl font-semibold tracking-tight md:text-5xl">
+              Speak with us about your infrastructure project.
+            </h2>
 
-          <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-zinc-600">
-            Get in touch to discuss civil engineering consulting, project
-            coordination, and infrastructure delivery support.
-          </p>
+            <div className="mt-10 grid gap-8 text-white/80 md:grid-cols-3">
+              <div>
+                <p className="text-sm uppercase tracking-[0.18em] text-white/50">
+                  Office
+                </p>
+                <p className="mt-3 leading-7">
+                  3rd Floor, Lot 34 &amp; 35, Block E, Damai Plaza Phase 4,
+                  88300 Kota Kinabalu, Sabah, Malaysia.
+                </p>
+              </div>
 
-          <div className="mt-10">
-            <a
-              href="mailto:hello@perdana.com"
-              className="rounded-full bg-zinc-900 px-6 py-3 text-sm font-medium text-white transition hover:opacity-90"
-            >
-              Email Us
-            </a>
+              <div>
+                <p className="text-sm uppercase tracking-[0.18em] text-white/50">
+                  Phone
+                </p>
+                <p className="mt-3">+60 88 261 873</p>
+              </div>
+
+              <div>
+                <p className="text-sm uppercase tracking-[0.18em] text-white/50">
+                  Email
+                </p>
+                <p className="mt-3">pjpkksabah@gmail.com</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>

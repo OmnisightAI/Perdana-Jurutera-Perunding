@@ -6,6 +6,7 @@ import { useState } from "react";
 const galleryImages = [
   "/images/Projects/Traffic/KK CBD.jpg",
   "/images/Projects/Traffic/masterplan2.jpg",
+  "/images/Projects/Traffic/kkt1.pdf",
 ];
 
 const generalInfo = [

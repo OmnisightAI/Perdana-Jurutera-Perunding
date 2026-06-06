@@ -4,7 +4,7 @@ const projects = [
   {
     title: "Sabah Road Development Plan (ORIS)",
     href: "/projects/oris",
-    image: "/images/Projects/Digital/Oris/Oris7.png",
+    image: "/images/Projects/Digital/Oris/Oris3.png",
     category: "Flagship Project",
     description:
       "A digital road information and planning system supporting long-term infrastructure visibility, network planning, and more informed decision-making across Sabah.",

@@ -4,7 +4,7 @@ const projects = [
   {
     title: "Jalan Donggongon Infrastructure Upgrades",
     href: "/projects/jalan-donggongon",
-    image: "/images/Projects/Donggongon/Jalan Doggongon.jpg",
+    image: "/images/Projects/Donggongon/Artis Impression/D3.png",
     category: "Road & Bridge Infrastructure",
     description:
       "Major road and infrastructure upgrades supporting long-term connectivity, drainage performance, and public infrastructure delivery.",
