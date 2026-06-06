@@ -32,7 +32,7 @@ export default function RootLayout({
           <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-6 md:px-6 md:py-8">
             <a href="/" className="flex shrink-0 items-center overflow-visible">
               <Image
-                src="/images/Logo/PJPLogoOri3.png"
+                src="/images/Logo/PJPLogoT.png"
                 alt="Perdana Jurutera Perunding logo"
                 width={300}
                 height={120}

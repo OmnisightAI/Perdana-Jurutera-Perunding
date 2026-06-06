@@ -12,7 +12,7 @@ export default function Home() {
           playsInline
           preload="metadata"
         >
-          <source src="/videos/home-hero.mp4" type="video/mp4" />
+          <source src="/Videos/Broll.mp4" type="video/mp4" />
         </video>
 
         <div className="absolute inset-0 bg-black/45" />
