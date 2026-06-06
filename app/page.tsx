@@ -310,7 +310,7 @@ export default function Home() {
               >
                 <div className="h-56 overflow-hidden bg-zinc-200">
                   <Image
-                    src="/images/Projects/UMS/UMS1.jpg"
+                    src="/images/Projects/UMS/UMS7.png"
                     alt="Infrastructure projects"
                     width={1200}
                     height={800}
