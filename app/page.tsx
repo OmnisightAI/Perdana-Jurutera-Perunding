@@ -10,6 +10,7 @@ const trustedClients = [
   "SEDIA",
   "Ministry of Education Malaysia",
 ];
+
 const expertiseBranches = [
   {
     title: "Bridges",
@@ -18,55 +19,85 @@ const expertiseBranches = [
   },
   {
     title: "Civil Engineering",
-    href: "/projects/Road",
+    href: "/projects/infrastructure-projects",
     icon: "/images/Icons/gt/Road.svg",
   },
   {
     title: "Structural Engineering",
-    href: "/projects/Structural",
+    href: "/projects/Bridge",
     icon: "/images/Icons/gt/Structures.svg",
   },
   {
     title: "Traffic & Transport Planning",
-    href: "/projects/Traffic",
+    href: "/projects/master-plan",
     icon: "/images/Icons/gt/Traffic.svg",
   },
   {
-    title: "Flooding & Hydrology",
-    href: "/projects/Flooding",
-    icon: "/images/Icons/gt/Flooding.svg",
-  },
-  {
     title: "Water Infrastructure",
-    href: "/projects/Water",
+    href: "/projects/infrastructure-projects",
     icon: "/images/Icons/gt/Water.svg",
   },
   {
     title: "Geotechnical",
-    href: "/projects/Geotechnical",
+    href: "/projects/infrastructure-projects",
     icon: "/images/Icons/gt/Geotech.svg",
   },
   {
     title: "Digital Engineering",
-    href: "/projects/Digital",
+    href: "/projects/digital-smart-infrastructure",
     icon: "/images/Icons/gt/Digital.svg",
   },
   {
     title: "Construction Engineering",
-    href: "/projects/Construcction",
+    href: "/projects/infrastructure-projects",
     icon: "/images/Icons/gt/construction2.svg",
   },
   {
     title: "Materials & Durability",
-    href: "/projects/Materials",
+    href: "/projects/infrastructure-projects",
     icon: "/images/Icons/gt/Materials.svg",
   },
+];
+
+const selectedProjects = [
   {
-    title: "Sustainability",
-    href: "/projects/Sustainability",
-    icon: "/images/Icons/gt/Sustainability.svg",
+    title: "Jalan UMS & Sepanggar Priority Roads",
+    href: "/projects/ums-sepanggar",
+    image: "/images/Projects/UMS/UMS22.png",
+    className: "md:col-span-3 md:row-span-2",
+  },
+  {
+    title: "Rampayan Flyover & Road Upgrades",
+    href: "/projects/Rampayan",
+    image: "/images/Projects/Rampayan/Rampayan Flyover1.jpg",
+    className: "md:col-span-3 md:row-span-1",
+  },
+  {
+    title: "Kingfisher Overpass & Road Upgrades",
+    href: "/projects/KingF",
+    image: "/images/Projects/Kingfisher/Kingfisher Flyover.png",
+    className: "md:col-span-3 md:row-span-1",
+  },
+  {
+    title: "Jalan Donggongon Infrastructure Upgrades",
+    href: "/projects/jalan-donggongon",
+    image: "/images/Projects/Donggongon/Artis Impression/D3.png",
+    className: "md:col-span-2 md:row-span-1",
+  },
+  {
+    title: "Sabah Road Development Plan ORIS",
+    href: "/projects/oris",
+    image: "/images/Projects/Digital/Oris/Oris3.png",
+    className: "md:col-span-2 md:row-span-1",
+  },
+  {
+    title: "Apas Balung Rural Water Supply",
+    href: "/projects/apas-balung",
+    image: "/images/Projects/Infrastructure/BALB Apas.jpg",
+    className: "md:col-span-2 md:row-span-1",
   },
 ];
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-white text-zinc-900">
@@ -249,7 +280,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* TRUSTED COMPANY CYCLE - NOW AFTER ABOUT */}
+      {/* TRUSTED COMPANY CYCLE */}
       <section className="border-y border-zinc-200 bg-white py-10">
         <div className="mx-auto max-w-7xl px-6">
           <p className="mb-6 text-center text-xs font-medium uppercase tracking-[0.25em] text-zinc-500">
@@ -273,6 +304,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+
       {/* EXPERTISE */}
       <section
         id="expertise"
@@ -290,7 +322,7 @@ export default function Home() {
           <p className="mt-6 max-w-3xl text-lg leading-8 text-zinc-600">
             Working closely with clients and stakeholders, we deliver practical
             engineering solutions across transport, bridges, civil
-            infrastructure, hydrology, digital systems, and more.
+            infrastructure, water assets, digital systems, and more.
           </p>
 
           <div className="mt-16 grid gap-x-20 gap-y-8 sm:grid-cols-2 lg:grid-cols-3">
@@ -318,140 +350,47 @@ export default function Home() {
           </div>
         </div>
       </section>
+
       {/* PROJECTS */}
-      <section id="projects" className="bg-zinc-50 py-20 md:py-28">
+      <section id="projects" className="bg-white py-20 md:py-28">
         <div className="mx-auto max-w-7xl px-6">
-          <p className="mb-3 text-sm uppercase tracking-[0.2em] text-red-600">
-            Projects
-          </p>
+          <div className="text-center">
+            <p className="mb-3 text-sm uppercase tracking-[0.2em] text-red-600">
+              Selected Projects
+            </p>
 
-          <h2 className="max-w-3xl text-3xl font-semibold tracking-tight md:text-5xl">
-            Explore our work across key engineering sectors in Sabah.
-          </h2>
+            <h2 className="text-4xl font-semibold tracking-tight md:text-6xl">
+              Our Projects
+            </h2>
+          </div>
 
-          <div className="mt-14 grid gap-6">
-            <a
-              href="/projects/digital-smart-infrastructure"
-              className="group grid overflow-hidden rounded-[2rem] bg-white transition hover:-translate-y-1 hover:shadow-md md:grid-cols-2"
-            >
-              <div className="h-72 overflow-hidden bg-zinc-200 md:h-full">
+          <div className="mt-14 grid auto-rows-[220px] gap-4 md:grid-cols-6 md:auto-rows-[190px]">
+            {selectedProjects.map((project) => (
+              <a
+                key={project.title}
+                href={project.href}
+                aria-label={project.title}
+                className={`group relative overflow-hidden rounded-xl bg-zinc-200 ${project.className}`}
+              >
                 <Image
-                  src="/images/Projects/Digital/Oris/Oris3.png"
-                  alt="Digital infrastructure systems ORIS"
-                  width={1600}
-                  height={1000}
-                  className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                  src={project.image}
+                  alt={project.title}
+                  fill
+                  sizes="(min-width: 768px) 50vw, 100vw"
+                  className="object-cover transition duration-700 group-hover:scale-105"
                 />
-              </div>
+                <div className="absolute inset-0 bg-black/0 transition group-hover:bg-black/20" />
+              </a>
+            ))}
+          </div>
 
-              <div className="flex flex-col justify-center p-8">
-                <h3 className="text-2xl font-semibold">
-                  Digital &amp; Smart Infrastructure
-                </h3>
-
-                <p className="mt-4 leading-7 text-zinc-600">
-                  Development of road asset systems, digital infrastructure
-                  platforms, and data-driven tools supporting long-term planning
-                  and network management across Sabah.
-                </p>
-
-                <p className="mt-6 text-sm font-medium text-red-600">
-                  Explore digital capability
-                </p>
-              </div>
+          <div className="mt-10 text-center">
+            <a
+              href="/projects/infrastructure-projects"
+              className="inline-flex rounded-full border border-zinc-300 px-6 py-3 text-sm font-medium text-zinc-900 transition hover:border-red-600 hover:text-red-600"
+            >
+              View all projects
             </a>
-
-            <div className="grid gap-6 md:grid-cols-3">
-              <a
-                href="/projects/infrastructure-projects"
-                className="group overflow-hidden rounded-[2rem] bg-white transition hover:-translate-y-1 hover:shadow-md"
-              >
-                <div className="h-56 overflow-hidden bg-zinc-200">
-                  <Image
-                    src="/images/Projects/UMS/UMS7.png"
-                    alt="Infrastructure projects"
-                    width={1200}
-                    height={800}
-                    className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
-                  />
-                </div>
-
-                <div className="p-6">
-                  <h3 className="text-xl font-semibold">
-                    Infrastructure Projects
-                  </h3>
-
-                  <p className="mt-2 text-zinc-600">
-                    Roads, drainage, water supply, and major infrastructure
-                    works across Sabah.
-                  </p>
-
-                  <p className="mt-6 text-sm font-medium text-red-600">
-                    Explore infrastructure
-                  </p>
-                </div>
-              </a>
-
-              <a
-                href="/projects/master-plan"
-                className="group overflow-hidden rounded-[2rem] bg-white transition hover:-translate-y-1 hover:shadow-md"
-              >
-                <div className="h-56 overflow-hidden bg-zinc-200">
-                  <Image
-                    src="/images/Projects/Traffic/KK CBD.jpg"
-                    alt="Master planning and traffic studies"
-                    width={1200}
-                    height={800}
-                    className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
-                  />
-                </div>
-
-                <div className="p-6">
-                  <h3 className="text-xl font-semibold">
-                    Master Planning &amp; Traffic Studies
-                  </h3>
-
-                  <p className="mt-2 text-zinc-600">
-                    Strategic transport studies, traffic impact assessments, and
-                    urban transport planning.
-                  </p>
-
-                  <p className="mt-6 text-sm font-medium text-red-600">
-                    Explore planning
-                  </p>
-                </div>
-              </a>
-
-              <a
-                href="/projects/infrastructure-projects"
-                className="group overflow-hidden rounded-[2rem] bg-white transition hover:-translate-y-1 hover:shadow-md"
-              >
-                <div className="h-56 overflow-hidden bg-zinc-200">
-                  <Image
-                    src="/images/Projects/Infrastructure/BALB Apas.jpg"
-                    alt="Water supply and civil infrastructure"
-                    width={1200}
-                    height={800}
-                    className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
-                  />
-                </div>
-
-                <div className="p-6">
-                  <h3 className="text-xl font-semibold">
-                    Water &amp; Civil Infrastructure
-                  </h3>
-
-                  <p className="mt-2 text-zinc-600">
-                    Water supply, drainage, reservoirs, pipe bridges, and civil
-                    infrastructure support.
-                  </p>
-
-                  <p className="mt-6 text-sm font-medium text-red-600">
-                    Explore civil works
-                  </p>
-                </div>
-              </a>
-            </div>
           </div>
         </div>
       </section>
