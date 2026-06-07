@@ -1,333 +1,89 @@
-"use client";
-
-import Image from "next/image";
-import { useState } from "react";
+import ProjectDetailPage from "../../../components/ProjectDetailPage";
 
 const galleryImages = [
-  "/images/Projects/Kingfisher/KF1.jpg",
-  "/images/Projects/Kingfisher/KF2.jpg",
-  "/images/Projects/Kingfisher/KF3.jpg",
-];
-
-const generalInfo = [
-  { label: "Client", value: "JKR Sabah" },
-  { label: "Location", value: "Kingfisher, Kota Kinabalu, Sabah" },
-  {
-    label: "Project Type",
-    value: "Overpass, road upgrades, and urban infrastructure",
-  },
-  { label: "Sector", value: "Roads, bridges, traffic, drainage, and civil infrastructure" },
-  {
-    label: "Scope",
-    value:
-      "Road upgrading and overpass infrastructure works at the Kingfisher corridor, supporting improved traffic movement, junction performance, and connectivity along the Kota Kinabalu road network.",
-  },
-];
-
-const keyFeatures = [
-  {
-    title: "Urban overpass works",
-    description:
-      "Overpass infrastructure supporting grade-separated movement and improved traffic flow through the Kingfisher corridor.",
-  },
-  {
-    title: "Road corridor upgrade",
-    description:
-      "Road improvement works supporting safer, smoother, and more reliable movement for local and through traffic.",
-  },
-  {
-    title: "Traffic and junction improvement",
-    description:
-      "Engineering support for improved junction operation, traffic distribution, and road user safety in a busy urban area.",
-  },
-  {
-    title: "Civil infrastructure coordination",
-    description:
-      "Coordination of roadworks, drainage, utilities, and related infrastructure elements within an active public road environment.",
-  },
-];
-
-const benefits = [
-  {
-    title: "Improved traffic flow",
-    description:
-      "Supports better movement through the Kingfisher area by reducing conflict at key road and junction locations.",
-  },
-  {
-    title: "Safer road operation",
-    description:
-      "Improves road geometry, traffic arrangement, and infrastructure serviceability for daily road users.",
-  },
-  {
-    title: "Stronger city connectivity",
-    description:
-      "Enhances access between Kingfisher, surrounding residential areas, commercial zones, UMS, and the wider Kota Kinabalu road network.",
-  },
+  "/images/Projects/Kingfisher/Kingfisher Flyover.png",
+  "/images/Projects/Kingfisher/UMS1.jpg",
+  "/images/Projects/Kingfisher/UMS4.jpg",
+  "/images/Projects/Kingfisher/29. Flyover Sulaman 30.06.2025.mp4_000012600.png",
 ];
 
 export default function Page() {
-  const [index, setIndex] = useState(0);
-
   return (
-    <main className="min-h-screen bg-white text-zinc-900">
-      {/* HERO */}
-      <section className="relative isolate overflow-hidden">
-        <div className="relative h-[62vh] min-h-[460px] w-full">
-          <Image
-            src="/images/Projects/Kingfisher/KF1.jpg"
-            alt="Kingfisher Overpass and Road Upgrades"
-            fill
-            priority
-            className="object-cover"
-          />
-          <div className="absolute inset-0 bg-black/45" />
-        </div>
-
-        <div className="absolute inset-0 flex items-end">
-          <div className="mx-auto w-full max-w-7xl px-6 pb-14 md:pb-20">
-            <p className="mb-4 text-sm uppercase tracking-[0.22em] text-white/80">
-              Project
-            </p>
-
-            <h1 className="max-w-5xl text-4xl font-semibold tracking-tight text-white md:text-6xl">
-              Kingfisher Overpass &amp; Road Upgrades
-            </h1>
-
-            <p className="mt-6 max-w-3xl text-lg leading-8 text-white/85">
-              Overpass and road infrastructure upgrade works supporting improved
-              traffic movement and urban connectivity in Kota Kinabalu.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* GENERAL INFORMATION */}
-      <section className="border-b border-zinc-200 bg-white py-16 md:py-20">
-        <div className="mx-auto max-w-7xl px-6">
-          <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr]">
-            <div>
-              <p className="mb-3 text-sm uppercase tracking-[0.2em] text-red-600">
-                General Information
-              </p>
-
-              <h2 className="text-3xl font-semibold tracking-tight md:text-4xl">
-                Project information at a glance
-              </h2>
-
-              <p className="mt-6 max-w-xl text-lg leading-8 text-zinc-600">
-                The Kingfisher overpass and road upgrade project supports
-                improved traffic movement, civil infrastructure performance, and
-                connectivity through one of Kota Kinabalu&apos;s important urban
-                growth corridors.
-              </p>
-            </div>
-
-            <div className="rounded-[2rem] border border-zinc-200 bg-zinc-50 p-8 md:p-10">
-              <div className="grid gap-x-8 gap-y-6 md:grid-cols-2">
-                {generalInfo.map((item) => (
-                  <div key={item.label} className="border-b border-zinc-200 pb-4">
-                    <p className="text-sm text-zinc-500">{item.label}</p>
-                    <p className="mt-2 font-medium leading-7 text-zinc-900">
-                      {item.value}
-                    </p>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* PROJECT STORY */}
-      <section className="py-16 md:py-24">
-        <div className="mx-auto grid max-w-7xl gap-12 px-6 lg:grid-cols-[1.05fr_0.95fr]">
-          <div>
-            <p className="mb-3 text-sm uppercase tracking-[0.2em] text-red-600">
-              Project Story
-            </p>
-
-            <h2 className="text-3xl font-semibold tracking-tight md:text-4xl">
-              Improving movement through the Kingfisher corridor
-            </h2>
-
-            <div className="mt-6 space-y-6 text-lg leading-8 text-zinc-600">
-              <p>
-                Kingfisher is a growing urban area in Kota Kinabalu, located near
-                major residential, commercial, education, and government
-                precincts.
-              </p>
-
-              <p>
-                The project involved overpass and road upgrading works to support
-                safer movement, improved junction performance, and more reliable
-                traffic flow through the corridor.
-              </p>
-
-              <p>
-                Perdana Jurutera Perunding&apos;s involvement reflects the
-                company&apos;s capability in bridge and road infrastructure,
-                traffic planning, drainage coordination, and practical
-                engineering support for public infrastructure projects in Sabah.
-              </p>
-            </div>
-          </div>
-
-          <div className="overflow-hidden rounded-[2rem] border border-zinc-200 bg-white">
-            <div className="relative h-full min-h-[340px] bg-zinc-100">
-              <Image
-                src="/images/Projects/Kingfisher/KF2.jpg"
-                alt="Kingfisher road upgrade infrastructure"
-                fill
-                className="object-cover"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* KEY FEATURES */}
-      <section className="border-t border-zinc-200 bg-zinc-50 py-16 md:py-24">
-        <div className="mx-auto max-w-7xl px-6">
-          <p className="mb-3 text-sm uppercase tracking-[0.2em] text-red-600">
-            Key Features
-          </p>
-
-          <h2 className="max-w-3xl text-3xl font-semibold tracking-tight md:text-4xl">
-            Core project features
-          </h2>
-
-          <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
-            {keyFeatures.map((feature) => (
-              <div
-                key={feature.title}
-                className="rounded-[1.5rem] border border-zinc-200 bg-white p-6"
-              >
-                <h3 className="text-lg font-semibold">{feature.title}</h3>
-                <p className="mt-3 leading-7 text-zinc-600">
-                  {feature.description}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* BENEFITS */}
-      <section className="border-t border-zinc-200 py-16 md:py-24">
-        <div className="mx-auto max-w-7xl px-6">
-          <p className="mb-3 text-sm uppercase tracking-[0.2em] text-red-600">
-            Benefits
-          </p>
-
-          <h2 className="max-w-3xl text-3xl font-semibold tracking-tight md:text-4xl">
-            Project value
-          </h2>
-
-          <div className="mt-10 grid gap-6 md:grid-cols-3">
-            {benefits.map((benefit) => (
-              <div
-                key={benefit.title}
-                className="rounded-[1.75rem] border border-zinc-200 bg-white p-8"
-              >
-                <h3 className="text-xl font-semibold">{benefit.title}</h3>
-                <p className="mt-4 leading-7 text-zinc-600">
-                  {benefit.description}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* GALLERY */}
-      <section className="border-t border-zinc-200 bg-zinc-50 py-16 md:py-24">
-        <div className="mx-auto max-w-7xl px-6">
-          <p className="mb-3 text-sm uppercase tracking-[0.2em] text-red-600">
-            Gallery
-          </p>
-
-          <h2 className="text-3xl font-semibold tracking-tight md:text-4xl">
-            Project images
-          </h2>
-
-          <div className="mt-10 overflow-hidden rounded-[2rem] border border-zinc-200 bg-white">
-            <div className="relative h-[520px] bg-zinc-100">
-              <Image
-                src={galleryImages[index]}
-                alt="Kingfisher overpass and road upgrade project gallery"
-                fill
-                className="object-cover"
-              />
-            </div>
-
-            <div className="grid gap-4 p-4 md:grid-cols-3">
-              {galleryImages.map((image, imageIndex) => (
-                <button
-                  key={image}
-                  type="button"
-                  onClick={() => setIndex(imageIndex)}
-                  className={`relative h-32 overflow-hidden rounded-xl border ${
-                    index === imageIndex
-                      ? "border-red-600"
-                      : "border-zinc-200"
-                  }`}
-                >
-                  <Image
-                    src={image}
-                    alt=""
-                    fill
-                    className="object-cover"
-                  />
-                </button>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* LOCATION */}
-      <section className="border-t border-zinc-200 py-16 md:py-24">
-        <div className="mx-auto max-w-7xl px-6">
-          <div className="grid gap-10 lg:grid-cols-[0.85fr_1.15fr]">
-            <div>
-              <p className="mb-3 text-sm uppercase tracking-[0.2em] text-red-600">
-                Location
-              </p>
-
-              <h2 className="text-3xl font-semibold tracking-tight md:text-4xl">
-                Kingfisher, Kota Kinabalu
-              </h2>
-
-              <p className="mt-6 text-lg leading-8 text-zinc-600">
-                The project is located around the Kingfisher area in Kota
-                Kinabalu, Sabah, supporting movement along the surrounding urban
-                road network.
-              </p>
-
-              <a
-                href="https://www.google.com/maps?q=Jalan+Kingfisher,Kota+Kinabalu,Sabah,Malaysia"
-                target="_blank"
-                rel="noreferrer"
-                className="mt-8 inline-flex rounded-full bg-zinc-900 px-6 py-3 text-sm font-medium text-white transition hover:opacity-90"
-              >
-                Open in Google Maps
-              </a>
-            </div>
-
-            <div className="overflow-hidden rounded-[2rem] border border-zinc-200 bg-zinc-100">
-              <iframe
-                src="https://www.google.com/maps?q=Jalan+Kingfisher,Kota+Kinabalu,Sabah,Malaysia&z=15&output=embed"
-                width="100%"
-                height="460"
-                style={{ border: 0 }}
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                title="Kingfisher overpass and road upgrade project location map"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
+    <ProjectDetailPage
+      title="Kingfisher Overpass & Road Upgrades"
+      subtitle="Overpass and road infrastructure works supporting improved traffic movement, junction performance, and connectivity through the Kingfisher corridor."
+      heroImage="/images/Projects/Kingfisher/Kingfisher Flyover.png"
+      heroAlt="Kingfisher Overpass and Road Upgrades"
+      generalInfo={[
+        { label: "Client", value: "JKR Sabah" },
+        { label: "Location", value: "Kingfisher, Kota Kinabalu, Sabah" },
+        {
+          label: "Project Type",
+          value: "Overpass, road upgrades, and urban infrastructure",
+        },
+        {
+          label: "Sector",
+          value: "Roads, bridges, traffic, drainage, and civil infrastructure",
+        },
+        {
+          label: "Scope",
+          value:
+            "Road upgrading and overpass infrastructure works at the Kingfisher corridor, supporting improved traffic movement, junction performance, and connectivity along the Kota Kinabalu road network.",
+        },
+      ]}
+      overview="The Kingfisher Overpass and Road Upgrades project supports improved traffic performance and road connectivity within a busy Kota Kinabalu urban corridor."
+      storyTitle="Strengthening the Kingfisher road corridor"
+      storyParagraphs={[
+        "Kingfisher is a key urban area connected to UMS, Sepanggar, surrounding residential communities, and the wider Kota Kinabalu road network.",
+        "The project supports grade-separated movement and improved road operation through overpass and road upgrade works, reducing conflict at key junction areas and improving corridor performance.",
+        "Perdana Jurutera Perunding's role reflects capability in road infrastructure, bridge and overpass works, traffic planning, drainage coordination, and practical public infrastructure delivery.",
+      ]}
+      storyImage="/images/Projects/Kingfisher/UMS1.jpg"
+      storyImageAlt="Kingfisher road and overpass infrastructure"
+      keyFeatures={[
+        {
+          title: "Urban overpass works",
+          description:
+            "Overpass infrastructure supporting grade-separated movement and improved traffic flow through the Kingfisher corridor.",
+        },
+        {
+          title: "Road corridor upgrade",
+          description:
+            "Road improvement works supporting safer, smoother, and more reliable movement for local and through traffic.",
+        },
+        {
+          title: "Traffic and junction improvement",
+          description:
+            "Engineering support for improved junction operation, traffic distribution, and road user safety in a busy urban area.",
+        },
+        {
+          title: "Civil infrastructure coordination",
+          description:
+            "Coordination of roadworks, drainage, utilities, and related infrastructure elements within an active public road environment.",
+        },
+      ]}
+      benefits={[
+        {
+          title: "Improved traffic flow",
+          description:
+            "Supports better movement through the Kingfisher area by reducing conflict at key road and junction locations.",
+        },
+        {
+          title: "Safer road operation",
+          description:
+            "Improves road geometry, traffic arrangement, and infrastructure serviceability for daily road users.",
+        },
+        {
+          title: "Stronger city connectivity",
+          description:
+            "Enhances access between Kingfisher, surrounding residential areas, commercial zones, UMS, and the wider Kota Kinabalu road network.",
+        },
+      ]}
+      galleryImages={galleryImages}
+      galleryAlt="Kingfisher overpass and road upgrade project visual"
+      locationTitle="Kingfisher, Kota Kinabalu"
+      locationDescription="The project is located around the Kingfisher corridor in Kota Kinabalu, Sabah."
+      mapQuery="Jalan Kingfisher, Kota Kinabalu, Sabah, Malaysia"
+    />
   );
 }
