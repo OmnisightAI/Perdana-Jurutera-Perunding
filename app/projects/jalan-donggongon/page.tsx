@@ -327,14 +327,14 @@ export default function Page() {
                 Project location
               </h2>
               <p className="mt-6 max-w-xl text-lg leading-8 text-zinc-600">
-                This project is presented as part of Perdana Jurutera
-                Perunding’s broader infrastructure portfolio in Sabah. The map
-                below provides a general location reference.
+                This project is located around Jalan Donggongon in Penampang,
+                Sabah, within the Greater Kota Kinabalu area. The map below
+                provides a more accurate project location reference.
               </p>
 
               <div className="mt-8">
                 <a
-                  href="https://www.google.com/maps/search/?api=1&query=5.90864952219029, 116.10110212433035"
+                  href="https://www.google.com/maps/search/?api=1&query=5.90864952219029,116.10110212433035"
                   target="_blank"
                   rel="noreferrer"
                   className="inline-flex rounded-full bg-zinc-900 px-6 py-3 text-sm font-medium text-white transition hover:opacity-90"
@@ -346,13 +346,13 @@ export default function Page() {
 
             <div className="overflow-hidden rounded-[2rem] border border-zinc-200 bg-white">
               <iframe
-                src="https://www.google.com/maps?q=5.90864952219029, 116.101102124330&output=embed"
+                src="https://www.google.com/maps?q=Jalan%20Donggongon%2C%20Penampang%2C%20Sabah%2C%20Malaysia&output=embed"
                 width="100%"
                 height="460"
                 style={{ border: 0 }}
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Sabah map"
+                title="Jalan Donggongon, Penampang map"
               />
             </div>
           </div>

@@ -10,12 +10,44 @@ const projects = [
       "Major road and infrastructure upgrades supporting long-term connectivity, drainage performance, and public infrastructure delivery.",
   },
   {
-    title: "Priority Roads: UMS & Sepanggar",
-    href: "/projects/ums-sepanggar",
-    image: "/images/Projects/UMS/UMS3.jpg",
+    title: "Indah Permai Interchange & Road Upgrades",
+    href: "/projects/Indah",
+    image: "/images/Projects/Indah Permai/Indah Permai Flyover.png",
     category: "Major Road & Flyover Infrastructure",
     description:
       "Upgrading of Jalan UMS and Jalan Sepanggar including multiple grade-separated junctions and segmental box girder flyover works.",
+  },
+  {
+    title: "Kingfisher Overpass & Road Upgrades",
+    href: "/projects/KingF",
+    image: "/images/Projects/Kingfisher/Kingfisher Flyover.png",
+    category: "Major Road & Flyover Infrastructure",
+    description:
+      "Upgrading of Jalan UMS and Jalan Sepanggar including multiple grade-separated junctions and segmental box girder flyover works.",
+  },
+  {
+    title: "Rampayan Flyover & Road Upgrades",
+    href: "/projects/Rampayan",
+    image: "/images/Projects/Rampayan/Rampayan Flyover1.jpg",
+    category: "Major Road & Flyover Infrastructure",
+    description:
+      "Upgrading of Jalan UMS and Jalan Sepanggar including multiple grade-separated junctions and segmental box girder flyover works.",
+  },
+  {
+    title: "Priority Roads: UMS & Sepanggar",
+    href: "/projects/UMS-Sepanggar",
+    image: "/images/Projects/UMS/UMS22.png",
+    category: "Major Road & Flyover Infrastructure",
+    description:
+      "Upgrading of Jalan UMS and Jalan Sepanggar including multiple grade-separated junctions and segmental box girder flyover works.",
+  },
+  {
+    title: "Priority Roads: Jalan Kolam–Minintod",
+    href: "/projects/Kolam",
+    image: "/images/Projects/Kolam/Kolam.jpg",
+    category: "Road & Flyover Infrastructure",
+    description:
+      "Upgrading of Jalan Kolam from Sunny Garden to Kg. Minintod including two flyovers.",
   },
   {
     title: "K.K. Traffic Improvement & Urban Transport Master Plan",
@@ -27,7 +59,7 @@ const projects = [
   },
   {
     title: "Priority Roads: Jalan Tun Fuad Stephens",
-    href: "/projects/tun-fuad-priority-roads",
+    href: "/projects/TFS",
     image: "/images/Projects/TunFuad/tJCiw.jpg",
     category: "Urban Road Upgrade",
     description:
@@ -35,39 +67,23 @@ const projects = [
   },
   {
     title: "Kota Kinabalu Traffic Study Phase II (2016–2040)",
-    href: "/projects/kk-traffic-study",
-    image: "/images/Projects/Trafficstudy2/4mSD9.jpg",
+    href: "/projects/KKTS2",
+    image: "/images/Projects/kkts2/1.jpg",
     category: "Traffic Study & Transport Planning",
     description:
       "Long-term traffic study for Kota Kinabalu involving junction surveys, roadside interviews, travel time surveys, and data coding.",
   },
   {
-    title: "Priority Roads: Jalan Kolam–Minintod",
-    href: "/projects/jalan-kolam-minintod",
-    image: "/images/Projects/Kolam/Kolam.jpg",
-    category: "Road & Flyover Infrastructure",
-    description:
-      "Upgrading of Jalan Kolam from Sunny Garden to Kg. Minintod including two flyovers.",
-  },
-  {
     title: "DBKK Skybridge & Pedestrian Linkage",
-    href: "/projects/dbkk-skybridge",
+    href: "/projects/SkyB",
     image: "/images/Projects/Sky/Sky2.jpg",
     category: "Pedestrian & Urban Infrastructure",
     description:
       "Skybridge, pedestrian linkage, and traffic improvement works connecting Asia City and the Oceanus development area.",
   },
   {
-    title: "Hospital Universiti Malaysia Sabah",
-    href: "/projects/hospital-ums",
-    image: "/images/Projects/Buildings/Hospital UMS.jpg",
-    category: "Institutional Development Planning",
-    description:
-      "Traffic impact study and site planning for Hospital Universiti Malaysia Sabah development in Kota Kinabalu.",
-  },
-  {
     title: "Schools & Institutional Buildings",
-    href: "/projects/schools-institutional",
+    href: "/projects/Schools",
     image: "/images/Projects/Schools/tcMxS (1).jpg",
     category: "C&S Institutional Infrastructure",
     description:
@@ -83,7 +99,7 @@ const projects = [
   },
   {
     title: "Bekalan Air Luar Bandar Keranaan",
-    href: "/projects/balb-keranaan",
+    href: "/projects/BALB",
     image: "/images/Projects/Keranaan/rYJ5K.jpg",
     category: "Rural Water Infrastructure",
     description:
@@ -91,15 +107,15 @@ const projects = [
   },
   {
     title: "Jalan Sook–Tulid–Sinua",
-    href: "/projects/sook-tulid-sinua",
-    image: "/images/Projects/Sook/QjUm4.jpg",
+    href: "/projects/Sook"
+    ,image: "/images/Projects/Sook/QjUm4.jpg",
     category: "Regional Road Infrastructure",
     description:
       "A 30.5 km JKR road project with bridge works, pile head construction, field density testing, and completed asphalt road sections.",
   },
   {
     title: "Jalan Bokara Batu Sapi Phase 2",
-    href: "/projects/bokara-batu-sapi",
+    href: "/projects/Bokara",
     image: "/images/Projects/Bokara/NSUaa.jpg",
     category: "Dual Carriageway Roadworks",
     description:
@@ -107,24 +123,24 @@ const projects = [
   },
   {
     title: "Karamunsing Interchange System",
-    href: "/projects/karamunsing-interchange",
-    image: "/images/Projects/Karamunsing/image_059.jpg",
+    href: "/projects/Karamunsing",
+    image: "/images/Projects/Karamunsing/k2.jpg",
     category: "Interchange & Road Network Planning",
     description:
       "Road network planning, design review, and road safety audit work for the Karamunsing Interchange System in Kota Kinabalu.",
   },
   {
     title: "Sapangar Bay Container Port Expansion",
-    href: "/projects/sapangar-bay-port-expansion",
-    image: "/images/Projects/Infrastructure/Sapangar.jpg",
+    href: "/projects/Seppangar",
+    image: "/images/Projects/Seppangar/Se1.png",
     category: "Port & Traffic Infrastructure",
     description:
       "Traffic impact study and site planning for the Sapangar Bay container port expansion project.",
   },
   {
     title: "Drainage Improvement Works",
-    href: "/projects/drainage-improvement-works",
-    image: "/images/Projects/Infrastructure/Drainage.jpg",
+    href: "/projects/Drainage",
+    image: "/images/Projects/Drainage/irrigation1.jpg",
     category: "Drainage & Stormwater Infrastructure",
     description:
       "Long-running drainage improvement portfolio including works in Tawau and Sandakan from the firm’s early project history.",

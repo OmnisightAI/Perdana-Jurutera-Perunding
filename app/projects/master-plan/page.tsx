@@ -332,7 +332,7 @@ export default function Page() {
 
               <div className="mt-8">
                 <a
-                  href="https://www.google.com/maps/place/Kota+Kinabalu,+Sabah,+Malaysia/"
+                  href="https://www.google.com/maps?q=5.977866479527974, 116.07506792310635"
                   target="_blank"
                   rel="noreferrer"
                   className="inline-flex rounded-full bg-zinc-900 px-6 py-3 text-sm font-medium text-white transition hover:opacity-90"
@@ -344,7 +344,7 @@ export default function Page() {
 
             <div className="overflow-hidden rounded-[2rem] border border-zinc-200 bg-white">
               <iframe
-                src="https://www.google.com/maps?q=Kota+Kinabalu+CBD,Sabah,Malaysia&output=embed"
+                src="https://www.google.com/maps?q=5.977866479527974, 116.07506792310635&z=17&output=embed"
                 width="100%"
                 height="460"
                 style={{ border: 0 }}

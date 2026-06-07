@@ -10,7 +10,63 @@ const trustedClients = [
   "SEDIA",
   "Ministry of Education Malaysia",
 ];
-
+const expertiseBranches = [
+  {
+    title: "Bridges",
+    href: "/projects/Bridge",
+    icon: "/images/icons/gt/bridge.svg",
+  },
+  {
+    title: "Civil Engineering",
+    href: "/projects/Road",
+    icon: "/images/icons/gt/Road.svg",
+  },
+  {
+    title: "Structural Engineering",
+    href: "/projects/Structural",
+    icon: "/images/icons/gt/Structures.svg",
+  },
+  {
+    title: "Traffic & Transport Planning",
+    href: "/projects/Traffic",
+    icon: "/images/icons/gt/Traffic.svg",
+  },
+  {
+    title: "Flooding & Hydrology",
+    href: "/projects/Flooding",
+    icon: "/images/icons/gt/Flooding.svg",
+  },
+  {
+    title: "Water Infrastructure",
+    href: "/projects/Water",
+    icon: "/images/icons/gt/Water.svg",
+  },
+  {
+    title: "Geotechnical",
+    href: "/projects/Geotechnical",
+    icon: "/images/icons/gt/Geotech.svg",
+  },
+  {
+    title: "Digital Engineering",
+    href: "/projects/Digital",
+    icon: "/images/icons/gt/Digital.svg",
+  },
+  {
+    title: "Construction Engineering",
+    href: "/projects/Construcction",
+    icon: "/images/icons/gt/Construction2.svg",
+  },
+  {
+    title: "Materials & Durability",
+    href: "/projects/Materials",
+    icon: "/images/icons/gt/Materials.svg",
+  },
+  {
+    title: "Sustainability",
+    href: "/projects/Sustainability",
+    icon: "/images/icons/gt/Sustainability.svg",
+  },
+];
 export default function Home() {
   return (
     <main className="min-h-screen bg-white text-zinc-900">
@@ -217,49 +273,51 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      {/* SERVICES */}
-      <section id="services" className="py-20 md:py-28">
+      {/* EXPERTISE */}
+      <section
+        id="expertise"
+        className="border-t border-zinc-200 bg-[#eef3f5] py-20 md:py-28"
+      >
         <div className="mx-auto max-w-7xl px-6">
           <p className="mb-3 text-sm uppercase tracking-[0.2em] text-red-600">
-            Services
+            Engineering Excellence
           </p>
 
-          <h2 className="max-w-3xl text-3xl font-semibold tracking-tight md:text-5xl">
-            Core engineering services shaped by real project delivery.
+          <h2 className="text-4xl font-semibold tracking-tight text-zinc-950 md:text-6xl">
+            Our Expertise
           </h2>
 
-          <div className="mt-14 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
-            {[
-              {
-                title: "Traffic Engineering & Transport Planning",
-                text: "Traffic impact studies, transport planning, junction assessment, and road network analysis for public and private developments.",
-              },
-              {
-                title: "Civil & Structural Engineering",
-                text: "Civil and structural design support for roads, drainage, water supply, buildings, and infrastructure works.",
-              },
-              {
-                title: "Road Safety Audit & Design Review",
-                text: "Road safety audit, design checking, technical review, and engineering assessment to support practical and compliant delivery.",
-              },
-              {
-                title: "Infrastructure Planning & Supervision",
-                text: "Infrastructure planning, project coordination, supervision, and consulting support across multidisciplinary developments.",
-              },
-            ].map((service) => (
-              <div
-                key={service.title}
-                className="rounded-[2rem] border border-zinc-200 p-8"
+          <p className="mt-6 max-w-3xl text-lg leading-8 text-zinc-600">
+            Working closely with clients and stakeholders, we deliver practical
+            engineering solutions across transport, bridges, civil
+            infrastructure, hydrology, digital systems, and more.
+          </p>
+
+          <div className="mt-16 grid gap-x-20 gap-y-8 sm:grid-cols-2 lg:grid-cols-3">
+            {expertiseBranches.map((item) => (
+              <a
+                key={item.title}
+                href={item.href}
+                className="group flex items-center gap-6"
               >
-                <h3 className="text-xl font-semibold">{service.title}</h3>
-                <p className="mt-4 leading-7 text-zinc-600">{service.text}</p>
-              </div>
+                <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-md border border-zinc-300 bg-white transition group-hover:border-red-500">
+                  <Image
+                    src={item.icon}
+                    alt=""
+                    width={34}
+                    height={34}
+                    className="h-9 w-9 object-contain"
+                  />
+                </div>
+
+                <span className="text-base font-medium text-zinc-700 transition group-hover:text-red-600">
+                  {item.title}
+                </span>
+              </a>
             ))}
           </div>
         </div>
       </section>
-
       {/* PROJECTS */}
       <section id="projects" className="bg-zinc-50 py-20 md:py-28">
         <div className="mx-auto max-w-7xl px-6">

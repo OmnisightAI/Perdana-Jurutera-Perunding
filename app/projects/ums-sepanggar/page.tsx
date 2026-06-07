@@ -174,7 +174,7 @@ export default function Page() {
           <div className="overflow-hidden rounded-[2rem] border border-zinc-200 bg-white">
             <div className="relative h-full min-h-[340px] bg-zinc-100">
               <Image
-                src="/images/Projects/Structures/UMS3.jpg"
+                src="/images/Projects/UMS/UMS3.jpg"
                 alt="UMS and Sepanggar flyover infrastructure"
                 fill
                 className="object-cover"
@@ -339,7 +339,7 @@ export default function Page() {
 
               <div className="mt-8">
                 <a
-                  href="https://www.google.com/maps/place/Jalan+UMS,+Kota+Kinabalu,+Sabah,+Malaysia/"
+                  href="https://www.google.com/maps?q=6.032408070814883, 116.12396053797805"
                   target="_blank"
                   rel="noreferrer"
                   className="inline-flex rounded-full bg-zinc-900 px-6 py-3 text-sm font-medium text-white transition hover:opacity-90"
@@ -351,7 +351,7 @@ export default function Page() {
 
             <div className="overflow-hidden rounded-[2rem] border border-zinc-200 bg-white">
               <iframe
-                src="https://www.google.com/maps?q=Jalan+UMS,Kota+Kinabalu,Sabah,Malaysia&output=embed"
+                src="https://www.google.com/maps?q=6.032408070814883, 116.12396053797805&z=17&output=embed"
                 width="100%"
                 height="460"
                 style={{ border: 0 }}
