@@ -12,7 +12,7 @@ const projects = [
   {
     title: "Indah Permai Interchange & Road Upgrades",
     href: "/projects/Indah",
-    image: "/images/Projects/Indah Permai/Indah Permai Flyover.png",
+    image: "/images/Projects/Indah permai/Indah Permai Flyover.png",
     category: "Major Road & Flyover Infrastructure",
     description:
       "Upgrading of Jalan UMS and Jalan Sepanggar including multiple grade-separated junctions and segmental box girder flyover works.",
@@ -100,7 +100,7 @@ const projects = [
   {
     title: "Bekalan Air Luar Bandar Keranaan",
     href: "/projects/BALB",
-    image: "/images/Projects/Keranaan/rYJ5K.jpg",
+    image: "/images/Projects/Keranaan/rYJ5k.jpg",
     category: "Rural Water Infrastructure",
     description:
       "Rural water supply system including mountain stream intake, raw water pipeline, pipe bridge, chlorination house, and HDPE storage tanks.",
