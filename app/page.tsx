@@ -14,57 +14,57 @@ const expertiseBranches = [
   {
     title: "Bridges",
     href: "/projects/Bridge",
-    icon: "/images/icons/gt/bridge.svg",
+    icon: "/images/Icons/gt/bridge.svg",
   },
   {
     title: "Civil Engineering",
     href: "/projects/Road",
-    icon: "/images/icons/gt/Road.svg",
+    icon: "/images/Icons/gt/Road.svg",
   },
   {
     title: "Structural Engineering",
     href: "/projects/Structural",
-    icon: "/images/icons/gt/Structures.svg",
+    icon: "/images/Icons/gt/Structures.svg",
   },
   {
     title: "Traffic & Transport Planning",
     href: "/projects/Traffic",
-    icon: "/images/icons/gt/Traffic.svg",
+    icon: "/images/Icons/gt/Traffic.svg",
   },
   {
     title: "Flooding & Hydrology",
     href: "/projects/Flooding",
-    icon: "/images/icons/gt/Flooding.svg",
+    icon: "/images/Icons/gt/Flooding.svg",
   },
   {
     title: "Water Infrastructure",
     href: "/projects/Water",
-    icon: "/images/icons/gt/Water.svg",
+    icon: "/images/Icons/gt/Water.svg",
   },
   {
     title: "Geotechnical",
     href: "/projects/Geotechnical",
-    icon: "/images/icons/gt/Geotech.svg",
+    icon: "/images/Icons/gt/Geotech.svg",
   },
   {
     title: "Digital Engineering",
     href: "/projects/Digital",
-    icon: "/images/icons/gt/Digital.svg",
+    icon: "/images/Icons/gt/Digital.svg",
   },
   {
     title: "Construction Engineering",
     href: "/projects/Construcction",
-    icon: "/images/icons/gt/Construction2.svg",
+    icon: "/images/Icons/gt/construction2.svg",
   },
   {
     title: "Materials & Durability",
     href: "/projects/Materials",
-    icon: "/images/icons/gt/Materials.svg",
+    icon: "/images/Icons/gt/Materials.svg",
   },
   {
     title: "Sustainability",
     href: "/projects/Sustainability",
-    icon: "/images/icons/gt/Sustainability.svg",
+    icon: "/images/Icons/gt/Sustainability.svg",
   },
 ];
 export default function Home() {
