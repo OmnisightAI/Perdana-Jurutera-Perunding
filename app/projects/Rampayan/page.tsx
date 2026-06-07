@@ -4,64 +4,67 @@ import Image from "next/image";
 import { useState } from "react";
 
 const galleryImages = [
-  "/images/Projects/Tun Fuad Stephens/TFS1.jpg",
-  "/images/Projects/Tun Fuad Stephens/TFS2.jpg",
-  "/images/Projects/Tun Fuad Stephens/TFS3.jpg",
+  "/images/Projects/Rampayan/Rampayan Flyover1.jpg",
+  "/images/Projects/Rampayan/Rampayan Flyover2.jpg",
+  "/images/Projects/Rampayan/29. Flyover Sulaman 30.06.2025.mp4_000133733.png",
 ];
 
 const generalInfo = [
   { label: "Client", value: "JKR Sabah" },
-  { label: "Location", value: "Kota Kinabalu, Sabah" },
+  { label: "Location", value: "Rampayan, Kota Kinabalu, Sabah" },
   {
     label: "Project Type",
-    value: "Priority road upgrade and urban infrastructure",
+    value: "Flyover, road upgrades, and urban infrastructure",
   },
-  { label: "Sector", value: "Roads, traffic, drainage, and civil infrastructure" },
+  {
+    label: "Sector",
+    value: "Roads, bridges, traffic, drainage, and civil infrastructure",
+  },
   {
     label: "Scope",
     value:
-      "Road upgrading and infrastructure improvement works along Jalan Tun Fuad Stephens, supporting traffic movement and urban connectivity.",
+      "Road upgrading and flyover infrastructure works at the Rampayan corridor, supporting improved traffic movement, junction performance, and connectivity along the Kota Kinabalu road network.",
   },
 ];
 
 const keyFeatures = [
   {
-    title: "Priority road corridor",
+    title: "Flyover infrastructure",
     description:
-      "Infrastructure improvement works along a key urban route serving Kota Kinabalu’s coastal and city movement network.",
+      "Elevated road infrastructure supporting grade-separated movement and improved traffic flow through the Rampayan corridor.",
   },
   {
-    title: "Traffic movement improvement",
+    title: "Road corridor upgrade",
     description:
-      "Road planning and engineering works to support smoother traffic flow, improved junction performance, and safer road operation.",
+      "Road improvement works supporting safer, smoother, and more reliable movement for local and through traffic.",
+  },
+  {
+    title: "Traffic and junction improvement",
+    description:
+      "Engineering support for improved junction operation, traffic distribution, and road user safety in a busy urban area.",
   },
   {
     title: "Civil infrastructure coordination",
     description:
-      "Coordination of roadworks, drainage, utilities, and related civil infrastructure elements within an active urban environment.",
-  },
-  {
-    title: "Urban connectivity",
-    description:
-      "Supports improved access between major city areas, waterfront zones, commercial districts, and surrounding road networks.",
+      "Coordination of roadworks, drainage, utilities, and related infrastructure elements within an active public road environment.",
   },
 ];
 
 const benefits = [
   {
-    title: "Reduced congestion",
+    title: "Improved traffic flow",
     description:
-      "Supports improved road capacity and better traffic distribution along a major urban corridor.",
+      "Supports better movement through the Rampayan area by reducing conflict at key road and junction locations.",
   },
   {
-    title: "Better public infrastructure",
+    title: "Safer road operation",
     description:
-      "Contributes to long-term road network improvement and public infrastructure serviceability.",
+      "Improves road geometry, traffic arrangement, and infrastructure serviceability for daily road users.",
   },
   {
-    title: "Improved city access",
+    title: "Stronger city connectivity",
     description:
-      "Enhances connectivity for road users travelling through Kota Kinabalu’s key urban and coastal areas.",
+      "Enhances access between Rampayan, surrounding residential areas, UMS, Sepanggar, and the wider Kota Kinabalu road network.",
   },
 ];
 
@@ -74,8 +77,8 @@ export default function Page() {
       <section className="relative isolate overflow-hidden">
         <div className="relative h-[62vh] min-h-[460px] w-full">
           <Image
-            src="/images/Projects/Tun Fuad Stephens/TFS1.jpg"
-            alt="Jalan Tun Fuad Stephens Priority Roads"
+            src="/images/Projects/Rampayan/Rampayan Flyover1.jpg"
+            alt="Rampayan Flyover and Road Upgrades"
             fill
             priority
             className="object-cover"
@@ -90,12 +93,13 @@ export default function Page() {
             </p>
 
             <h1 className="max-w-5xl text-4xl font-semibold tracking-tight text-white md:text-6xl">
-              Priority Roads: Jalan Tun Fuad Stephens
+              Rampayan Flyover & Road Upgrades
             </h1>
 
             <p className="mt-6 max-w-3xl text-lg leading-8 text-white/85">
-              Road upgrading and civil infrastructure improvement works along one
-              of Kota Kinabalu&apos;s key urban corridors.
+              Flyover and road infrastructure works supporting improved traffic
+              movement, grade-separated connectivity, and urban road performance
+              in Kota Kinabalu.
             </p>
           </div>
         </div>
@@ -115,9 +119,10 @@ export default function Page() {
               </h2>
 
               <p className="mt-6 max-w-xl text-lg leading-8 text-zinc-600">
-                The Jalan Tun Fuad Stephens priority road project supports
-                improved traffic movement, civil infrastructure performance, and
-                connectivity through a major urban corridor in Kota Kinabalu.
+                The Rampayan Flyover and Road Upgrades project forms part of the
+                wider priority road improvement works supporting traffic movement,
+                connectivity, and infrastructure performance along Kota Kinabalu's
+                growing northern road corridor.
               </p>
             </div>
 
@@ -146,26 +151,26 @@ export default function Page() {
             </p>
 
             <h2 className="text-3xl font-semibold tracking-tight md:text-4xl">
-              Strengthening a key Kota Kinabalu road corridor
+              Improving movement through the Rampayan corridor
             </h2>
 
             <div className="mt-6 space-y-6 text-lg leading-8 text-zinc-600">
               <p>
-                Jalan Tun Fuad Stephens is one of Kota Kinabalu&apos;s important
-                urban routes, serving traffic movement between city, commercial,
-                waterfront, and surrounding development areas.
+                Rampayan is part of a growing urban corridor serving movement
+                between residential areas, UMS, Sepanggar, and the wider Kota
+                Kinabalu road network.
               </p>
 
               <p>
-                The project involved priority road improvement and civil
-                infrastructure works to support safer, smoother, and more
-                reliable movement through the corridor.
+                The project supports improved road capacity and junction operation
+                through flyover and road upgrade works, helping reduce traffic
+                conflict and improve long-term corridor performance.
               </p>
 
               <p>
-                Perdana Jurutera Perunding&apos;s involvement reflects the
-                company&apos;s capability in road infrastructure, traffic
-                planning, drainage coordination, and practical engineering
+                Perdana Jurutera Perunding's involvement reflects the company's
+                capability in road infrastructure, bridge and flyover works,
+                traffic planning, drainage coordination, and practical engineering
                 support for public infrastructure projects in Sabah.
               </p>
             </div>
@@ -174,8 +179,8 @@ export default function Page() {
           <div className="overflow-hidden rounded-[2rem] border border-zinc-200 bg-white">
             <div className="relative h-full min-h-[340px] bg-zinc-100">
               <Image
-                src="/images/Projects/Tun Fuad Stephens/TFS2.jpg"
-                alt="Jalan Tun Fuad Stephens road infrastructure"
+                src="/images/Projects/Rampayan/Rampayan Flyover2.jpg"
+                alt="Rampayan flyover and road infrastructure"
                 fill
                 className="object-cover"
               />
@@ -253,7 +258,7 @@ export default function Page() {
             <div className="relative h-[520px] bg-zinc-100">
               <Image
                 src={galleryImages[index]}
-                alt="Jalan Tun Fuad Stephens project gallery"
+                alt="Rampayan flyover and road upgrade project gallery"
                 fill
                 className="object-cover"
               />
@@ -294,16 +299,17 @@ export default function Page() {
               </p>
 
               <h2 className="text-3xl font-semibold tracking-tight md:text-4xl">
-                Jalan Tun Fuad Stephens, Kota Kinabalu
+                Rampayan, Kota Kinabalu
               </h2>
 
               <p className="mt-6 text-lg leading-8 text-zinc-600">
-                The project is located along Jalan Tun Fuad Stephens in Kota
-                Kinabalu, Sabah.
+                The project is located around the Rampayan corridor in Kota
+                Kinabalu, Sabah, supporting road connectivity between surrounding
+                urban and residential areas.
               </p>
 
               <a
-                href="https://www.google.com/maps?q=Jalan+Tun+Fuad+Stephens,Kota+Kinabalu,Sabah,Malaysia"
+                href="https://www.google.com/maps?q=Rampayan,Kota+Kinabalu,Sabah,Malaysia"
                 target="_blank"
                 rel="noreferrer"
                 className="mt-8 inline-flex rounded-full bg-zinc-900 px-6 py-3 text-sm font-medium text-white transition hover:opacity-90"
@@ -314,13 +320,13 @@ export default function Page() {
 
             <div className="overflow-hidden rounded-[2rem] border border-zinc-200 bg-zinc-100">
               <iframe
-                src="https://www.google.com/maps?q=Jalan+Tun+Fuad+Stephens,Kota+Kinabalu,Sabah,Malaysia&z=15&output=embed"
+                src="https://www.google.com/maps?q=Rampayan,Kota+Kinabalu,Sabah,Malaysia&z=15&output=embed"
                 width="100%"
                 height="460"
                 style={{ border: 0 }}
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Jalan Tun Fuad Stephens project location map"
+                title="Rampayan Kota Kinabalu project location map"
               />
             </div>
           </div>
