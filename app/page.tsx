@@ -352,7 +352,7 @@ export default function Home() {
       </section>
 
       {/* PROJECTS */}
-      <section id="projects" className="bg-white py-20 md:py-28">
+      <section id="projects" className="border-t border-zinc-200 bg-white py-20 md:py-28">
         <div className="mx-auto max-w-7xl px-6">
           <div className="text-center">
             <p className="mb-3 text-sm uppercase tracking-[0.2em] text-red-600">
@@ -396,10 +396,10 @@ export default function Home() {
       </section>
 
       {/* CONTACT */}
-      <section id="contact" className="py-20 md:py-28">
+      <section id="contact" className="border-t border-zinc-200 bg-zinc-50 py-20 md:py-28">
         <div className="mx-auto max-w-7xl px-6">
-          <div className="rounded-[2rem] bg-zinc-950 p-8 text-white md:p-12">
-            <p className="mb-3 text-sm uppercase tracking-[0.2em] text-red-300">
+          <div className="rounded-[2rem] border border-zinc-200 bg-white p-8 text-zinc-900 shadow-sm md:p-12">
+            <p className="mb-3 text-sm uppercase tracking-[0.2em] text-red-600">
               Contact
             </p>
 
@@ -407,29 +407,29 @@ export default function Home() {
               Speak with us about your infrastructure project.
             </h2>
 
-            <div className="mt-10 grid gap-8 text-white/80 md:grid-cols-3">
+            <div className="mt-10 grid gap-8 text-zinc-700 md:grid-cols-3">
               <div>
-                <p className="text-sm uppercase tracking-[0.18em] text-white/50">
+                <p className="text-sm uppercase tracking-[0.18em] text-zinc-500">
                   Office
                 </p>
-                <p className="mt-3 leading-7">
+                <p className="mt-3 leading-7 text-zinc-900">
                   3rd Floor, Lot 34 &amp; 35, Block E, Damai Plaza Phase 4,
                   88300 Kota Kinabalu, Sabah, Malaysia.
                 </p>
               </div>
 
               <div>
-                <p className="text-sm uppercase tracking-[0.18em] text-white/50">
+                <p className="text-sm uppercase tracking-[0.18em] text-zinc-500">
                   Phone
                 </p>
-                <p className="mt-3">+60 88 261 873</p>
+                <p className="mt-3 text-zinc-900">+60 88 261 873</p>
               </div>
 
               <div>
-                <p className="text-sm uppercase tracking-[0.18em] text-white/50">
+                <p className="text-sm uppercase tracking-[0.18em] text-zinc-500">
                   Email
                 </p>
-                <p className="mt-3">pjpkksabah@gmail.com</p>
+                <p className="mt-3 text-zinc-900">pjpkksabah@gmail.com</p>
               </div>
             </div>
           </div>
