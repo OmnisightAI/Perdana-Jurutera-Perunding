@@ -11,8 +11,8 @@ const projects = [
   },
   {
     title: "Indah Permai Interchange & Road Upgrades",
-    href: "/projects/ums-sepanggar",
-    image: "/images/Projects/Indah Permai/Indah Permai Flyover.png",
+    href: "/projects/Indah",
+    image: "/images/Projects/Indah permai/Indah Permai Flyover.png",
     category: "Major Road & Flyover Infrastructure",
     description:
       "Upgrading of Jalan UMS and Jalan Sepanggar including multiple grade-separated junctions and segmental box girder flyover works.",
@@ -23,15 +23,15 @@ const projects = [
     image: "/images/Projects/Kingfisher/Kingfisher Flyover.png",
     category: "Major Road & Flyover Infrastructure",
     description:
-      "Upgrading of Jalan UMS and Jalan Sepanggar including multiple grade-separated junctions and segmental box girder flyover works.",
+      "Road and overpass infrastructure supporting improved traffic movement, junction performance, and connectivity through the Kingfisher corridor.",
   },
   {
     title: "Rampayan Flyover & Road Upgrades",
-    href: "/projects/ums-sepanggar",
+    href: "/projects/Rampayan",
     image: "/images/Projects/Rampayan/Rampayan Flyover1.jpg",
     category: "Major Road & Flyover Infrastructure",
     description:
-      "Upgrading of Jalan UMS and Jalan Sepanggar including multiple grade-separated junctions and segmental box girder flyover works.",
+      "Flyover and road upgrading works supporting improved movement along the Jalan UMS and Jalan Sepanggar corridor.",
   },
   {
     title: "Priority Roads: UMS & Sepanggar",
@@ -39,7 +39,7 @@ const projects = [
     image: "/images/Projects/UMS/UMS22.png",
     category: "Major Road & Flyover Infrastructure",
     description:
-      "Upgrading of Jalan UMS and Jalan Sepanggar including multiple grade-separated junctions and segmental box girder flyover works.",
+      "Upgrading of Jalan UMS and Jalan Sepanggar including grade-separated junctions and elevated road infrastructure.",
   },
   {
     title: "Priority Roads: Jalan Kolam–Minintod",
@@ -59,7 +59,7 @@ const projects = [
   },
   {
     title: "DBKK Skybridge & Pedestrian Linkage",
-    href: "/projects/dbkk-skybridge",
+    href: "/projects/SkyB",
     image: "/images/Projects/Sky/Sky2.jpg",
     category: "Pedestrian & Urban Infrastructure",
     description:
@@ -79,9 +79,8 @@ export default function Page() {
             Bridge Projects
           </h1>
           <p className="mt-6 max-w-3xl text-lg leading-8 text-zinc-600">
-            Roads, drainage, water supply, and major infrastructure works
-            supporting practical delivery and long-term civil performance across
-            Sabah.
+            Bridge, flyover, road, and elevated infrastructure works supporting
+            practical delivery and long-term transport performance across Sabah.
           </p>
         </div>
       </section>
@@ -93,16 +92,13 @@ export default function Page() {
               All
             </span>
             <span className="rounded-full border border-zinc-300 px-4 py-2 text-sm font-medium text-zinc-700">
-              Flagship
+              Flyovers
             </span>
             <span className="rounded-full border border-zinc-300 px-4 py-2 text-sm font-medium text-zinc-700">
               Roads
             </span>
             <span className="rounded-full border border-zinc-300 px-4 py-2 text-sm font-medium text-zinc-700">
-              Drainage
-            </span>
-            <span className="rounded-full border border-zinc-300 px-4 py-2 text-sm font-medium text-zinc-700">
-              Water Supply
+              Urban Infrastructure
             </span>
           </div>
         </div>
@@ -145,34 +141,6 @@ export default function Page() {
                 </div>
               </a>
             ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="border-t border-zinc-200 py-16">
-        <div className="mx-auto flex max-w-7xl flex-col items-start justify-between gap-6 px-6 md:flex-row md:items-center">
-          <div>
-            <p className="text-sm uppercase tracking-[0.2em] text-red-600">
-              Next Step
-            </p>
-            <h2 className="mt-2 text-2xl font-semibold tracking-tight">
-              Explore infrastructure project work in more detail
-            </h2>
-          </div>
-
-          <div className="flex flex-wrap gap-4">
-            <a
-              href="/"
-              className="rounded-full border border-zinc-300 px-6 py-3 text-sm font-medium transition hover:bg-zinc-50"
-            >
-              Back to Home
-            </a>
-            <a
-              href="/projects/jalan-donggongon"
-              className="rounded-full bg-zinc-900 px-6 py-3 text-sm font-medium text-white transition hover:opacity-90"
-            >
-              View Flagship Project
-            </a>
           </div>
         </div>
       </section>
