@@ -45,8 +45,8 @@ export default function RootLayout({
               <a href="/#about" className="transition hover:opacity-60">
                 About
               </a>
-              <a href="/#services" className="transition hover:opacity-60">
-                Services
+              <a href="/#expertise" className="transition hover:opacity-60">
+                Expertise
               </a>
               <a href="/#projects" className="transition hover:opacity-60">
                 Projects
