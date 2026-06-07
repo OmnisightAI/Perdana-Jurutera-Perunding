@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import Image from "next/image";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -28,16 +27,13 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <header className="border-b border-zinc-200 bg-white overflow-visible">
-          <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-6 md:px-6 md:py-8">
-            <a href="/" className="flex shrink-0 items-center overflow-visible">
-              <Image
-                src="/images/Logo/PJPLogoT.png"
+        <header className="border-b border-zinc-200 bg-white">
+          <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-5 md:px-6 md:py-6">
+            <a href="/" className="flex shrink-0 items-center">
+              <img
+                src="/images/Logo/PJPLogoVector.svg"
                 alt="Perdana Jurutera Perunding logo"
-                width={300}
-                height={120}
-                className="h-16 w-auto origin-left scale-[2.4] object-contain md:h-20 md:scale-[3.2]"
-                priority
+                className="h-14 w-auto md:h-16"
               />
             </a>
 
