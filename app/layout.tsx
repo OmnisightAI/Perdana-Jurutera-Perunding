@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
+const siteUrl = "https://perdana-jurutera-perunding.vercel.app";
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -13,8 +15,45 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Perdana Jurutera Perunding",
-  description: "Engineering consulting across Sabah",
+  metadataBase: new URL(siteUrl),
+  title: {
+    default: "Perdana Jurutera Perunding | Civil & Structural Engineers Sabah",
+    template: "%s | Perdana Jurutera Perunding",
+  },
+  description:
+    "Perdana Jurutera Perunding is a Sabah based civil and structural engineering consultancy specialising in bridges, roads, infrastructure, buildings and project advisory services.",
+  keywords: [
+    "Perdana Jurutera Perunding",
+    "PJP",
+    "civil engineer Sabah",
+    "structural engineer Sabah",
+    "bridge engineering Sabah",
+    "infrastructure engineering Malaysia",
+    "Kota Kinabalu engineering consultant",
+  ],
+  alternates: {
+    canonical: siteUrl,
+  },
+  openGraph: {
+    title: "Perdana Jurutera Perunding | Civil & Structural Engineers Sabah",
+    description:
+      "Sabah based civil and structural engineering consultancy specialising in bridges, roads, infrastructure, buildings and project advisory services.",
+    url: siteUrl,
+    siteName: "Perdana Jurutera Perunding",
+    locale: "en_MY",
+    type: "website",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
 };
 
 export default function RootLayout({
