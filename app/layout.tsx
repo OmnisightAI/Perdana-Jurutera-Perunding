@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -31,9 +32,7 @@ export const metadata: Metadata = {
     "infrastructure engineering Malaysia",
     "Kota Kinabalu engineering consultant",
   ],
-  alternates: {
-    canonical: siteUrl,
-  },
+  alternates: { canonical: siteUrl },
   openGraph: {
     title: "Perdana Jurutera Perunding | Civil & Structural Engineers Sabah",
     description:
@@ -46,53 +45,39 @@ export const metadata: Metadata = {
   robots: {
     index: true,
     follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      "max-image-preview": "large",
-      "max-snippet": -1,
-      "max-video-preview": -1,
-    },
   },
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-GPSN3P9KS1"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-GPSN3P9KS1');
+          `}
+        </Script>
+
         <header className="border-b border-zinc-200 bg-white">
           <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-5 md:px-6 md:py-6">
             <a href="/" className="flex shrink-0 items-center">
-              <img
-                src="/images/Logo/PJPLogoVector.svg"
-                alt="Perdana Jurutera Perunding logo"
-                className="h-14 w-auto md:h-16"
-              />
+              <img src="/images/Logo/PJPLogoVector.svg" alt="Perdana Jurutera Perunding logo" className="h-14 w-auto md:h-16" />
             </a>
-
             <nav className="hidden gap-8 text-sm font-medium text-zinc-900 md:flex">
-              <a href="/#about" className="transition hover:opacity-60">
-                About
-              </a>
-              <a href="/#expertise" className="transition hover:opacity-60">
-                Expertise
-              </a>
-              <a href="/#projects" className="transition hover:opacity-60">
-                Projects
-              </a>
-              <a href="/#contact" className="transition hover:opacity-60">
-                Contact
-              </a>
+              <a href="/#about" className="transition hover:opacity-60">About</a>
+              <a href="/#expertise" className="transition hover:opacity-60">Expertise</a>
+              <a href="/#projects" className="transition hover:opacity-60">Projects</a>
+              <a href="/#contact" className="transition hover:opacity-60">Contact</a>
             </nav>
           </div>
         </header>
-
         {children}
       </body>
     </html>
